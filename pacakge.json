@@ -1,0 +1,19 @@
+{
+  "name": "knowledgesharingcampaign.org",
+  "version": "1.0.0",
+  "description": "Main site code for the KSC website",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knowledge-sharing-campaign/site.git"
+  },
+  "author": "The KSC Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knowledge-sharing-campaign/site/issues"
+  },
+  "homepage": "https://github.com/knowledge-sharing-campaign/site#readme",
+  "dependencies": {
+    "coffee-script": "^1.10.0"
+  }
+}
