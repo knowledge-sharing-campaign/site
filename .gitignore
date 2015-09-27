@@ -3,3 +3,6 @@ node_modules/
 *.pyc
 .idea/
 *.iml
+.NGINX_PID
+.UWSGI_PID
+nginx.conf
