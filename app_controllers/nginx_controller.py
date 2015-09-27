@@ -43,4 +43,4 @@ def handle_nginx(mode, port):
         kill_nginx()
     else:
         kill_nginx()
-        start_nginx()
+        start_nginx(port)
