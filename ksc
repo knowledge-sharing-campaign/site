@@ -5,6 +5,9 @@ import sys
 import subprocess
 import os
 
+from app_controllers.nginx_controller import handle_nginx
+from app_controllers.uwsgi_controller import handle_uwsgi
+
 if os.getuid():
     sys.stderr.write("Error. Plese start ksc with root privileges\n")
     exit(1)
@@ -32,49 +35,5 @@ elif args.stop:
 else:
     mode = "restart"
 
-nginx_pid_file = ".NGINX_PID"
-
-
-def render_nginx_config():
-    print "Rendering config for nginx..."
-    subprocess.call(['node', 'render_conf.js', str(args.port)])
-    print "Config rendered."
-
-
-def kill_nginx():
-    if os.path.exists(nginx_pid_file):
-        print "Running nginx process found. Killing it..."
-        with open(nginx_pid_file) as pid:
-            subprocess.call(['kill', pid.readlines()[0].strip()])
-        os.remove(nginx_pid_file)
-        print "nginx stopped."
-
-
-def start_nginx():
-    render_nginx_config()
-
-    print "Starting nginx..."
-    kill_nginx()
-
-    process = subprocess.Popen(
-        ["nginx", "-c", os.getcwd() + "/app/server_configs/nginx.conf"])
-
-    process.wait()
-    if process.poll() != 0:
-        print "nginx start failed."
-    else:
-        with open(nginx_pid_file, "w") as pid:
-            pid.write(str(process.pid + 1))  # TODO: Possibly flaky PID check.
-        print "nginx successfully started on port %d" % args.port
-
-
-def handle_nginx(mode):
-    if mode == "start":
-        start_nginx()
-    elif mode == "stop":
-        kill_nginx()
-    else:
-        kill_nginx()
-        start_nginx()
-
-handle_nginx(mode)
+handle_nginx(mode, args.port)
+handle_uwsgi(mode)
