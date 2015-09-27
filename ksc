@@ -2,7 +2,6 @@
 
 import argparse
 import sys
-import subprocess
 import os
 
 from app_controllers.nginx_controller import handle_nginx
@@ -23,7 +22,7 @@ parser.add_argument(
     "--port", help="Specify the port to listen to. Default is 7070", type=int, default=7070)
 args = parser.parse_args()
 
-if not(args.start or args.stop or args.restart):
+if not (args.start or args.stop or args.restart):
     sys.stderr.write(
         "Error. Please specify one option among (-start, -stop, -restart)\n")
     exit(1)
