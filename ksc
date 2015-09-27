@@ -6,9 +6,11 @@ import os
 
 from app_controllers.nginx_controller import handle_nginx
 from app_controllers.uwsgi_controller import handle_uwsgi
+from app_controllers.dev_watchers import handle_static_root
+from app_controllers.dev_watchers import compile_coffee_scripts
 
 if os.getuid():
-    sys.stderr.write("Error. Plese start ksc with root privileges\n")
+    sys.stderr.write("Error. Please start ksc with root privileges\n")
     exit(1)
 
 parser = argparse.ArgumentParser(
@@ -17,9 +19,10 @@ parser.add_argument(
     "-start", help="Render configs and start all the services.", action='store_true')
 parser.add_argument(
     "-stop", help="Stop all services and clean up.", action='store_true')
-parser.add_argument("-restart", help="Restart the app", action='store_true')
+parser.add_argument("-restart", help="Restart everything.", action='store_true')
 parser.add_argument(
-    "--port", help="Specify the port to listen to. Default is 7070", type=int, default=7070)
+    "--port", help="Specify the port to listen to. Default is 7070.", type=int, default=7070)
+parser.add_argument("-dev", help="Start services in development mode with file watchers.", action='store_true')
 args = parser.parse_args()
 
 if not (args.start or args.stop or args.restart):
@@ -34,5 +37,7 @@ elif args.stop:
 else:
     mode = "restart"
 
+compile_coffee_scripts(mode, args.dev)
+handle_static_root(mode, args.dev)
 handle_nginx(mode, args.port)
 handle_uwsgi(mode)

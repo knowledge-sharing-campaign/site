@@ -23,7 +23,7 @@ def start_uwsgi():
     os.chdir("..")
 
     with open(uwsgi_pid_file, "w") as pid:
-        pid.write(str(process.pid))  # TODO: Possibly flaky PID check.
+        pid.write(str(process.pid))
     print "uwsgi successfully started."
 
 

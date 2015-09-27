@@ -18,7 +18,7 @@ http {
         }
 
         location /static {
-            root <% this.static_root %>;
+            root /opt/ksc;
         }
     }
 }

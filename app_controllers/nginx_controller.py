@@ -25,8 +25,7 @@ def start_nginx(port):
     print "Starting nginx..."
     kill_nginx()
 
-    process = subprocess.Popen(
-        ["nginx", "-c", os.getcwd() + "/app/server_configs/nginx.conf"])
+    process = subprocess.Popen(["nginx", "-c", os.getcwd() + "/app/server_configs/nginx.conf"])
 
     process.wait()
     if process.poll() != 0:

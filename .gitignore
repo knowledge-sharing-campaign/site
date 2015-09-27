@@ -5,4 +5,7 @@ node_modules/
 *.iml
 .NGINX_PID
 .UWSGI_PID
+.STATIC_WATCHER_PID
+.COFFEE_PID
 nginx.conf
+app/static/js/*.js

@@ -30,7 +30,6 @@ renderedConfig = render(template, {
     client_max_body_size: "75M",
     name: "ksc_site",
     port: process.argv[2],
-    static_root: [process.cwd(), "/app/"].join(''),
     worker_connections: 1024,
     worker_processes: 5
 });
