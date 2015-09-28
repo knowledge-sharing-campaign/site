@@ -32,7 +32,9 @@ Development requirements
 Running
 ----------
 > - Clone this repo using ``` git clone https://github.com/knowledge-sharing-campaign/site ```
-> - While inside the folder 'site',  run (will use 7070 port by default)
+> - Go inside the site folder using ``` cd site ```
+> - run ``` sudo pip install -U -r requirements.txt ```
+> - run the following commands (will use 7070 port by default)
     - ``` sudo ./ksc -start ``` for production mode
     - ``` sudo ./ksc -start -dev``` for development mode
     - ``` sudo ./ksc -stop ``` to stop the servers
