@@ -1,6 +1,8 @@
 The KSC Main Site
 ===============
 
+[![Join the chat at https://gitter.im/knowledge-sharing-campaign/site](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/knowledge-sharing-campaign/site?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is the repo for the code for the main knowledge sharing campaign website at http://knowledgesharingcampaign.org
 
 The backend has been designed for high scalability and performance for a large number of concurrent users and heavy loads.
