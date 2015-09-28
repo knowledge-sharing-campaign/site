@@ -23,8 +23,6 @@ Development requirements
 > - *Nix Systems like any Linux or OSX system. Windows can't run this as this is poetic code and windows is sadly prosaic.
 > - Python 2.7.x / PyPy which is most probably installed in your system. Windows sucks isn't it??
 > - pip - Install using ``` sudo easy_install pip ```
-> - Flask micro web framework - Install using ``` sudo pip install Flask ```
-> - uWSGI for Python - Install using ``` sudo pip install uWSGI ```
 > - NGINX - Install in OSX using ``` brew install nginx ``` and in Linux systems using ``` sudo apt-get install nginx ```. Again Windows sucks isn't it??
 > - node.js - Install in OSX using ``` brew install nodejs ``` and in Linux as ``` sudo apt-get install nodejs ```
 > - coffeescript - install using ``` sudo npm install -g coffee-script```
