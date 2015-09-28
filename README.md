@@ -21,6 +21,7 @@ Tech Stack
 Development requirements
 --------------------------------
 > - *Nix Systems like any Linux or OSX system. Windows can't run this as this is poetic code and windows is sadly prosaic.
+> - Homebrew for OSX. Install from http://brew.sh/ if it isn't installed already which it should be.
 > - Python 2.7.x / PyPy which is most probably installed in your system. Windows sucks isn't it??
 > - pip - Install using ``` sudo easy_install pip ```
 > - NGINX - Install in OSX using ``` brew install nginx ``` and in Linux systems using ``` sudo apt-get install nginx ```. Again Windows sucks isn't it??
