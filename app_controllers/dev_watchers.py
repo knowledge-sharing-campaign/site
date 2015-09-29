@@ -36,6 +36,7 @@ def handle_static_root(mode, dev_mode):
     static_watcher_pid_file = ".STATIC_WATCHER_PID"
     subprocess.call(["rm", "-rf", "/opt/ksc/static/*"])
     subprocess.call(["mkdir", "-p", "/opt/ksc/static"])
+    subprocess.call(["chmod", "-R", "555" "/opt/ksc/static"])
 
     if not dev_mode:
         return
