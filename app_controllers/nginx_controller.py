@@ -14,7 +14,8 @@ def kill_nginx():
     if os.path.exists(nginx_pid_file):
         print "Running nginx process found. Killing it..."
         with open(nginx_pid_file) as pid:
-            subprocess.call(['kill', pid.readlines()[0].strip()])
+            if subprocess.call(['kill', pid.readlines()[0].strip()]):
+                subprocess.call(['nginx', '-s', 'stop'])
         os.remove(nginx_pid_file)
         print "nginx stopped."
 
