@@ -1,4 +1,4 @@
-user www www;
+user <% this.user %>;
 worker_processes  <% this.worker_processes %>;
 
 events {

@@ -30,6 +30,7 @@ renderedConfig = render(template, {
     client_max_body_size: "75M",
     name: "ksc_site",
     port: process.argv[2],
+    user: process.platform == 'darwin' ? 'www www' : 'www-data www-data',
     worker_connections: 1024,
     worker_processes: 5
 });
