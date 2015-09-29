@@ -6,6 +6,8 @@ events {
 }
 
 http {
+    include mime.types;
+
     server {
         listen <% this.port %>;
         server_name <% this.name %>;
@@ -19,6 +21,11 @@ http {
 
         location /static {
             root /opt/ksc;
+        }
+
+        location ~ \.css {
+            root /opt/ksc;
+            add_header Content-Type text/css;
         }
     }
 }
