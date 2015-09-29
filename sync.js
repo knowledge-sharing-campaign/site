@@ -1,5 +1,6 @@
 var fs = require("fs");
 var path = require("path");
+var execSync = require('child_process').execSync;
 
 var config = {
     source: "app/static",
@@ -37,6 +38,7 @@ function cpr(src, dest) {
 
 rmrf(config.destination);
 cpr(config.source, config.destination);
+execSync("chmod -R 555 /opt/ksc/static");
 
 fs.watch(config.source, function(event, filename) {
     rmrf(config.destination);
