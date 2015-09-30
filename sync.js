@@ -9,7 +9,7 @@ var config = {
 
 function rmrf(path) {
     if (fs.existsSync(path)) {
-        fs.readdirSync(path).forEach(function(file, index) {
+        fs.readdirSync(path).forEach(function (file) {
             var curPath = path + "/" + file;
             if (fs.lstatSync(curPath).isDirectory()) {
                 rmrf(curPath);
@@ -28,7 +28,7 @@ function cpr(src, dest) {
 
     if (exists && isDirectory) {
         fs.mkdirSync(dest);
-        fs.readdirSync(src).forEach(function(childItemName) {
+        fs.readdirSync(src).forEach(function (childItemName) {
             cpr(path.join(src, childItemName), path.join(dest, childItemName));
         });
     } else {
@@ -40,7 +40,8 @@ rmrf(config.destination);
 cpr(config.source, config.destination);
 execSync("chmod -R 555 /opt/ksc/static");
 
-fs.watch(config.source, function(event, filename) {
+fs.watch(config.source, function (event, filename) {
     rmrf(config.destination);
     cpr(config.source, config.destination);
+    execSync("chmod -R 555 /opt/ksc/static");
 });
