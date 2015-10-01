@@ -1,0 +1,14 @@
+form {
+    border: 5px solid black;
+    width: 100%;
+    font-size: 18px
+}
+
+table,
+td {
+    border: 0px solid black;
+}
+
+h1 {
+    font-size: 20px
+}

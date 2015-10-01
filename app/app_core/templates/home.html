@@ -4,9 +4,10 @@
 <head>
     <title>KSC</title>
     <meta charset="UTF-8">
-    <link href="/static/slider/themes/4/js-image-slider.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/slider/themes/4/js-image-slider.css" rel="stylesheet" type="text/css" />
     <script src="/static/slider/themes/4/js-image-slider.js" type="text/javascript"></script>
     <script src="/static/slider/themes/1/js-image-slider.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/static/css/home.css" type="text/css">
 </head>
 
 <body>
@@ -17,7 +18,11 @@
             <img align="right" alt="Go to KSC google+ page" border="0" height="42" src="/static/images/google1.jpeg" width="42"></a>
         <a href="https://twitter.com/hashtag/KnowledgeSharingCampaign?src=hash&lang=en"><img align="right" alt="Go to KSC facebook page" border="0" height="42" src="/static/images/twitter1.jpeg" width="42"></a>
     </p>
-    <div id="sliderFrame">
+
+    <table width="100%">
+        <tr>
+            <th>
+                <div id="sliderFrame">
         <div id="slider">
             <img height="800" src="/static/images/1.jpg" width="600">
             <img height="800" src="/static/images/2.jpg" width="600">
@@ -34,6 +39,38 @@
             <a onclick="imageSlider.next()" class="group2-Next"></a>
         </div>
     </div>
+            </th>
+            <th>
+               <div align="top">
+    <form>
+        <center>
+            <br>
+            <h1>Sign in</h1>
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="text">
+                    </th>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Sign In">
+            <input type="submit" value="Register">
+        </center>
+    </form>
+    </div> 
+            </td>
+        </tr>
+    </table>
+    
+    
 </body>
 
 </html>
