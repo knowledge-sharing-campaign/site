@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 application = Flask(__name__)
 
 
 @application.route("/")
-def hello():
-    return "<h1 style='color:blue'>Hello There!</h1>"
+def serve_home():
+    return render_template("home.html")
 
 
 @application.route("/test")
