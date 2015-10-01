@@ -4,19 +4,36 @@
 <head>
     <title>KSC</title>
     <meta charset="UTF-8">
+    <link href="/static/slider/themes/4/js-image-slider.css" rel="stylesheet" type="text/css"/>
+    <script src="/static/slider/themes/4/js-image-slider.js" type="text/javascript"></script>
+    <script src="/static/slider/themes/1/js-image-slider.js" type="text/javascript"></script>
 </head>
-<body style="background-color:#CCE6FF" />
-<p>
-    <img src="/static/images/logo1.jpeg" height="5%" width="10%">
-    <a href="https://www.facebook.com/Knowledge-Sharing-Campaign-2017193451752977/timeline/?ref=br_tf">
-        <img src="/static/images/facebook1.jpeg" alt="Go to KSC facebook page" align="Right" width="42" height="42" border="0">
-    </a>
-    <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier">
-        <img src="/static/images/google1.jpeg" alt="Go to KSC google+ page" align="Right" width="42" height="42" border="0">
-    </a>
-    <a href="https://twitter.com/hashtag/KnowledgeSharingCampaign?src=hash&lang=en">
-        <img src="/static/images/twitter1.jpeg" alt="Go to KSC facebook page" align="Right" width="42" height="42" border="0">
-    </a>
-</p>
+
+<body>
+    <p><img height="5%" src="/static/images/logo1.jpeg" width="10%">
+        <a href="https://www.facebook.com/Knowledge-Sharing-Campaign-2017193451752977/timeline/?ref=br_tf">
+            <img align="right" alt="Go to KSC facebook page" border="0" height="42" src="/static/images/facebook1.jpeg" width="42"></a>
+        <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier">
+            <img align="right" alt="Go to KSC google+ page" border="0" height="42" src="/static/images/google1.jpeg" width="42"></a>
+        <a href="https://twitter.com/hashtag/KnowledgeSharingCampaign?src=hash&lang=en"><img align="right" alt="Go to KSC facebook page" border="0" height="42" src="/static/images/twitter1.jpeg" width="42"></a>
+    </p>
+    <div id="sliderFrame">
+        <div id="slider">
+            <img height="800" src="/static/images/1.jpg" width="600">
+            <img height="800" src="/static/images/2.jpg" width="600">
+            <img height="800" src="/static/images/3.jpg" width="600">
+            <img height="800" src="/static/images/4.jpg" width="600">
+        </div>
+        <div class="group1-Wrapper">
+            <a onclick="imageSlider.previous()" class="group1-Prev"></a>
+            <a onclick="imageSlider.next()" class="group1-Next"></a>
+        </div>
+        <div style="text-align:center;padding:20px;z-index:20;">
+            <a onclick="imageSlider.previous()" class="group2-Prev"></a>
+            <a id='auto' onclick="switchAutoAdvance()"></a>
+            <a onclick="imageSlider.next()" class="group2-Next"></a>
+        </div>
+    </div>
 </body>
+
 </html>
