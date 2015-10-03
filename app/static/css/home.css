@@ -12,3 +12,19 @@ td {
 h1 {
     font-size: 20px
 }
+
+.slider_wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-device-width: 800px),
+screen and (max-width: 800px) {
+    .slider_wrapper {
+        width: 80%;
+    }
+}
+
+.slider_block {
+    width: 100%;
+}
