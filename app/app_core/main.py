@@ -22,3 +22,7 @@ def events():
 @application.route("/gallery")
 def gallery():
     return render_template("gallery.html")
+
+@application.route("/register")
+def register():
+    return render_template("registration.html")
