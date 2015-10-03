@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="/static/slippry/dist/slippry.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/static/slippry/dist/slippry.css">
     <link rel="stylesheet" href="/static/css/home.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
     <style type="text/css">
     body {
         background-color: #CCE6FF
@@ -32,6 +34,10 @@
     
     #bar {
         padding-top: 25px
+    }
+    
+    footer {
+        padding-top: 600px
     }
     </style>
 </head>
@@ -84,6 +90,37 @@
             </ul>
         </article>
     </section>
+    <footer>
+        <div>
+            <p>
+                <a id="contact-us" href="javascript:;">Contact Us</a>
+                <script>
+                $("#contact-us").click(function() {
+                    $.fancybox.open({
+                        href: '/static/htmls/contacts.html',
+                        type: 'iframe',
+                        padding: 5
+                    });
+                });
+                </script>
+                <a href="https://www.google.co.in/maps/dir/''/thoughtworks/@17.4429977,78.283609,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3bcb9395ed638f61:0x49acd498fc2f1237!2m2!1d78.3574265!2d17.4430113" target="_blank"><img alt="Go to google maps" align="top" border="0" height="200" src="/static/images/map.jpeg" width="200"></a>
+                <a href="https://www.facebook.com/Knowledge-Sharing-Campaign-2017193451752977/timeline/?ref=br_tf" target="_blank"><img alt="Go to KSC facebook page" align="top" border="0" height="42" src="/static/images/facebook1.jpeg" width="42"></a>
+                <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" target="_blank"><img alt="Go to KSC google+ page" align="top" border="0" height="42" src="/static/images/google1.jpeg" width="42"></a>
+                <a href="https://twitter.com/hashtag/KnowledgeSharingCampaign?src=hash&lang=en" target="_blank"><img alt="Go to KSC facebook page" align="Top" border="0" height="42" src="/static/images/twitter1.jpeg" width="42"></a>
+                <a id="partners" href="javascript:;">Partners</a>
+                <script>
+                $("#partners").click(function() {
+                    $.fancybox.open({
+                        href: '/static/htmls/partners.html',
+                        type: 'iframe',
+                        padding: 5
+                    });
+                });
+                </script>
+                <br>
+                <p>Copyright knowledgesharingcampaign <a href="terms&con.html" target="_blank">    (Terms & Conditions)</a> </p>
+        </div>
+    </footer>
     <script>
     $(function() {
         var demo1 = $("#slider").slippry({
