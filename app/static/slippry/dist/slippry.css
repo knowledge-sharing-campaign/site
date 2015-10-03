@@ -102,7 +102,7 @@
     transform: translateY(-20%) translateX(-10%); } }
 /* added to the original element calling slippry */
 .sy-box.sy-loading {
-  background: url("/images/sy-loader.gif") 50% 50% no-repeat;
+  background: url("/static/images/sy-loader.gif") 50% 50% no-repeat;
   -moz-background-size: 32px;
   -o-background-size: 32px;
   -webkit-background-size: 32px;
@@ -234,7 +234,7 @@
         outline: none; }
       .sy-controls li a:after {
         content: "";
-        background-image: url("/images/arrows.svg");
+        background-image: url("/static/images/arrows.svg");
         background-repeat: no-repeat;
         -moz-background-size: cover;
         -o-background-size: cover;
