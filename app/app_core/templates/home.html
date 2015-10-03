@@ -9,29 +9,58 @@
     <script src="/static/slippry/dist/slippry.min.js"></script>
     <link rel="stylesheet" href="/static/slippry/dist/slippry.css">
     <link rel="stylesheet" href="/static/css/home.css" type="text/css">
+
+    <style type="text/css">
+    body {
+        background-color: #CCE6FF }
+    #Table1 {
+        background-color: #5CD6FF ;
+        font: 20px arial, sans-serif ;
+        width:50% ;
+        margin: 5px auto }
+    a:link {
+        color: black ;
+        text-decoration: none}
+    a:hover {
+        text-transform: none}
+    #bar {
+        padding-top: 25px
+    }
+    </style>
+
 </head>
 
-<body style="background-color:#CCE6FF">
-    <center>
-        <h1>Knowledge Sharing Campaign</h1>
-    </center>
-    <div header>
-                <table border="1" width="100%" id="Table1">
-                    <tr font-size="14" align="center">
-                        <td><a href="home.html">Home</a></td>
-                        <td><a href="aboutus.html">About Us</a></td>
-                        <td><a href="gallery.html">Gallery</a></td>
-                        <td><a href="events.html">Events</a></td>
-                    </tr>
-                </table>
-        </div>
-    <p><img height="5%" src="/static/images/logo1.jpeg" width="10%">
+<body>
+    <div>
+        <tr><img height="5%" src="/static/images/logo1.jpeg" width="10%" id="logo"></tr>
+    </div>
+    <div align="center">
+        <table id="Table1">
+            <tr  align="center" id="bar">
+                <td><a href="home.html">Home</a></td>
+                <td><a href="aboutus.html">About Us</a></td>
+                <td><a href="gallery.html">Gallery</a></td>
+                <td><a href="forum.html">Forum</a></td>
+                <td><a href="upcomingevents.html">Upcoming Events</a></td>
+            </tr>
+        </table>
+    </div>
+    <div align="right" id="lang">
+        <select><option>Language</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+        </select>
+        <button type="button">Log In</button>
+    </div>
+
+    <p>
         <a href="https://www.facebook.com/Knowledge-Sharing-Campaign-2017193451752977/timeline/?ref=br_tf">
             <img align="right" alt="Go to KSC facebook page" border="0" height="42" src="/static/images/facebook1.jpeg" width="42"></a>
         <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier">
             <img align="right" alt="Go to KSC google+ page" border="0" height="42" src="/static/images/google1.jpeg" width="42"></a>
         <a href="https://twitter.com/hashtag/KnowledgeSharingCampaign?src=hash&lang=en"><img align="right" alt="Go to KSC facebook page" border="0" height="42" src="/static/images/twitter1.jpeg" width="42"></a>
     </p>
+<<<<<<< HEAD
     <section class="slider_wrapper">
         <article class="slider_block">
             <ul id="slider">
@@ -63,6 +92,60 @@
         });
     });
     </script>
+=======
+
+    <table width="100%">
+        <tr>
+            <th>
+                <div id="sliderFrame">
+        <div id="slider">
+            <img height="800" src="/static/images/1.jpg" width="600">
+            <img height="800" src="/static/images/2.jpg" width="600">
+            <img height="800" src="/static/images/3.jpg" width="600">
+            <img height="800" src="/static/images/4.jpg" width="600">
+        </div>
+        <div class="group1-Wrapper">
+            <a onclick="imageSlider.previous()" class="group1-Prev"></a>
+            <a onclick="imageSlider.next()" class="group1-Next"></a>
+        </div>
+        <div style="text-align:center;padding:20px;z-index:20;">
+            <a onclick="imageSlider.previous()" class="group2-Prev"></a>
+            <a id='auto' onclick="switchAutoAdvance()"></a>
+            <a onclick="imageSlider.next()" class="group2-Next"></a>
+        </div>
+    </div>
+            </th>
+            <th>
+               <div align="top">
+    <form>
+        <center>
+            <br>
+            <h1>Sign in</h1>
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="text">
+                    </th>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Sign In">
+            <input type="submit" value="Register">
+        </center>
+    </form>
+    </div> 
+            </td>
+        </tr>
+    </table>
+    
+>>>>>>> Yash Noor | Header | modifying header
 </body>
 
 </html>
