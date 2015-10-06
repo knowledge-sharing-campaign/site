@@ -14,12 +14,12 @@
         <h1>SIGN UP</h1>
         <p>
             <label for="firstname">First Name: <span class="required">*</span></label>
-            <input type="text" id="firstname" name="firstname" value="" placeholder="Alvares" required="required" autofocus="autofocus" />
+            <input type="text" id="firstname" name="firstname" value="" placeholder="firstname here" required="required" autofocus="autofocus" />
             <br>
         </p>
         <p>
             <label for="firstname">Sur Name: <span class="required">*</span></label>
-            <input type="text" id="surname" name="surname" value="" placeholder="Rimsky" required="required" autofocus="autofocus" />
+            <input type="text" id="surname" name="surname" value="" placeholder="surname here" required="required" autofocus="autofocus" />
             <br>
         </p>
         <p>
@@ -123,9 +123,33 @@
                     <br>
                 </p>
                 <p>
+                    <label for="captchar"> Captchar <span class="captchar">*</span></label>
+                    <input type="text" name="Verify if you are a human">
+                    <br>
+                </p>
+                <p>
                     <label for="password">Password: <span class="required">*</span></label>
                     <input type="text" id="password" name="password" value="" placeholder="*********" required="required" autofocus="autofocus" />
-                    <br>
+                </p>
+                <p>
+                    <INPUT TYPE="checkbox" NAME="Terms" VALUE="Conditions"> "I have read and agree to the following" <a target="_blank" href="http://ideamensch.com/terms-and-conditions" rel="nofollow" >Terms and conditions</a>
+
+                </p>
+                <p>
+                <script type="text/javascript">
+                    $('#recaptchaButton').click(function (e) {
+    e.preventDefault();
+    $.post('https://examples.webscript.io/recaptcha',
+        { challenge: Recaptcha.get_challenge(), response:Recaptcha.get_response() },
+        function (data) {
+            if (data.success) {
+                alert("Captcha completed successfully!");
+                loadCaptcha();
+            } else {
+                alert("Captcha failed.");
+            }
+        });
+});</script>
                 </p>
                 <input type="submit" value="Submit">
     </div>
