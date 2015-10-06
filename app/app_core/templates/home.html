@@ -9,36 +9,49 @@
     <script src="/static/slippry/dist/slippry.min.js"></script>
     <link rel="stylesheet" href="/static/slippry/dist/slippry.css">
     <link rel="stylesheet" href="/static/css/home.css" type="text/css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="/static/slippry/dist/slippry.css">
+    <link rel="stylesheet" href="/static/css/home.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
     <style type="text/css">
     body {
-        background-color: #CCE6FF }
+        background-color: #CCE6FF
+    }
+    
     #Table1 {
-        background-color: #5CD6FF ;
-        font: 20px arial, sans-serif ;
-        width:50% ;
-        margin: 5px auto }
+        background-color: #5CD6FF;
+        font: 20px arial, sans-serif;
+        width: 50%;
+        margin: 5px auto
+    }
+    
     a:link {
-        color: black ;
-        text-decoration: none}
+        color: black;
+        text-decoration: none
+    }
+    
     a:hover {
-        text-transform: none}
+        text-transform: none
+    }
+    
     #bar {
         padding-top: 25px
     }
-    header{
-
-    height: 100px;
-    background: #dbdbdb;
-    width: 100%;
-    z-index: 10;
-    position: fixed;
-
+    
+    header {
+        height: 100px;
+        background: #dbdbdb;
+        width: 100%;
+        z-index: 10;
+        position: fixed;
     }
     </style>
-
 </head>
+
 <body style="background-color:#CCE6FF">
+    <div>
+        <img height="5%" src="/static/images/logo1.jpeg" width="10%" id="logo">
+    </div>
     <center>
         <h1>Knowledge Sharing Campaign</h1>
     </center>
@@ -84,6 +97,58 @@
             </ul>
         </article>
     </section>
+    <footer>
+        <div>
+            <p>
+                <a id="contact-us" href="javascript:;">Contact Us</a>
+                <script>
+                $("#contact-us").click(function() {
+                    $.fancybox.open({
+                        href: '/static/htmls/contacts.html',
+                        type: 'iframe',
+                        padding: 5
+                    });
+                });
+                </script>
+                <a href="https://www.google.co.in/maps/dir/''/thoughtworks/@17.4429977,78.283609,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3bcb9395ed638f61:0x49acd498fc2f1237!2m2!1d78.3574265!2d17.4430113" target="_blank"><img alt="Go to google maps" align="top" border="0" height="200" src="/static/images/map.jpeg" width="200"></a>
+                <a href="https://www.facebook.com/Knowledge-Sharing-Campaign-2017193451752977/timeline/?ref=br_tf" target="_blank"><img alt="Go to KSC facebook page" align="top" border="0" height="42" src="/static/images/facebook1.jpeg" width="42"></a>
+                <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" target="_blank"><img alt="Go to KSC google+ page" align="top" border="0" height="42" src="/static/images/google1.jpeg" width="42"></a>
+                <a href="https://twitter.com/hashtag/KnowledgeSharingCampaign?src=hash&lang=en" target="_blank"><img alt="Go to KSC facebook page" align="Top" border="0" height="42" src="/static/images/twitter1.jpeg" width="42"></a>
+                <a id="partners" href="javascript:;">Partners</a>
+                <script>
+                $("#partners").click(function() {
+                    $.fancybox.open({
+                        href: '/static/htmls/partners.html',
+                        type: 'iframe',
+                        padding: 5
+                    });
+                });
+                </script>
+                <br>
+                <p>Copyright knowledgesharingcampaign
+                    <a id="termscons" href="javascript:;">(Terms&amp;Conditions)</a>
+                    <script>
+                    $("#termscons").click(function() {
+                        $.fancybox.open({
+                            href: '/static/htmls/termscons.html',
+                            type: 'iframe',
+                            padding: 5
+                        });
+                    });
+                    </script>
+                    <a id="privacy" href="javascript:;">(Privacy Policy)</a>
+                    <script>
+                    $("#privacy").click(function() {
+                        $.fancybox.open({
+                            href: '/static/htmls/privacy.html',
+                            type: 'iframe',
+                            padding: 5
+                        });
+                    });
+                    </script>
+                </p>
+        </div>
+    </footer>
     <script>
     $(function() {
         var demo1 = $("#slider").slippry({
