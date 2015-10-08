@@ -138,6 +138,51 @@
                     <p>
                     <input type="submit" value="Submit"><br>
                 </form>
+<<<<<<< HEAD
+=======
+                </p>
+                <p>
+                    <label for="university"> University/Institution <span class="required"></span></label>
+                    <input type="text" name="university or institution">
+                    <br>
+                </p>
+                <p>
+                    <label for="course"> Course <span class="required"></span></label>
+                    <input type="text" name="Course or field of study">
+                    <br>
+                </p>
+                <p>
+                    <label for="captchar"> Captchar <span class="captchar"></span></label>
+                    <input type="text" name="Verify if you are a human">
+                    <br>
+                  
+                </p>
+                <p>
+                    <label for="password">Password: <span class="required"></span></label>
+                    <input type="password"  name="password" value="" placeholder="*********" required="required" autofocus="autofocus" />
+                </p>
+                <p>
+                    <INPUT TYPE="checkbox" NAME="Terms" VALUE="Conditions"> "I have read and agree to the following" <a target="_blank" href="http://ideamensch.com/terms-and-conditions" rel="nofollow" >Terms and conditions</a>
+
+                </p>
+                <p>
+                <script type="text/javascript">
+                    $('#recaptchaButton').click(function (e) {
+    e.preventDefault();
+    $.post('https://examples.webscript.io/recaptcha',
+        { challenge: Recaptcha.get_challenge(), response:Recaptcha.get_response() },
+        function (data) {
+            if (data.success) {
+                alert("Captcha completed successfully!");
+                loadCaptcha();
+            } else {
+                alert("Captcha failed.");
+            }
+        });
+});</script>
+                </p>
+                <input type="submit" value="Submit">
+>>>>>>> Noor , Joelle | modified registration
     </div>
     <div style="float:right; width:50%; ">
         <form>
@@ -153,7 +198,12 @@
                 <tr>
                     <td>Password</td>
                     <th>
+<<<<<<< HEAD
                         <input type="password" id="myPsw" value="psw123">
+=======
+                        <input type="password" id="myPsw">
+
+>>>>>>> Noor , Joelle | modified registration
                     </th>
                 </tr>
             </table>
