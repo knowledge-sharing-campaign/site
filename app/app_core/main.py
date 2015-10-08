@@ -25,8 +25,8 @@ def events():
 def gallery():
     return render_template("gallery.html")
 
-@application.route("/register")
-def register():
+@application.route("/signup")
+def signup():
     parsed_content = minidom.parseString(requests.get('http://textcaptcha.com/api').content)
     question = parsed_content.getElementsByTagName('question')[0].childNodes[0].nodeValue
     answers = []
