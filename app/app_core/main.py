@@ -1,3 +1,5 @@
+import requests
+from xml.dom import minidom
 from flask import Flask, render_template
 
 application = Flask(__name__)
@@ -25,4 +27,14 @@ def gallery():
 
 @application.route("/register")
 def register():
-    return render_template("registration.html")
+    parsed_content = minidom.parseString(requests.get('http://textcaptcha.com/api').content)
+    question = parsed_content.getElementsByTagName('question')[0].childNodes[0].nodeValue
+    answers = []
+    
+    for node in parsed_content.getElementsByTagName('answer')[0].childNodes:
+        answers.append(node.nodeValue)
+
+    return render_template("registration.html",
+        question=question,
+        answers=' '.join(answers)
+    )
