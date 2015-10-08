@@ -8,4 +8,3 @@ node_modules/
 .STATIC_WATCHER_PID
 .COFFEE_PID
 nginx.conf
-app/static/js/*.js

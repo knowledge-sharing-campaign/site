@@ -7,45 +7,46 @@
         text-decoration: underline;
     }
     </style>
+    <script type="text/javascript" src="/static/js/md5.min.js"></script>
+    <script type="text/javascript">
+    function validate() {
+        var my_answer = md5(document.getElementById("my_answer").value);
+        var actual_answer = document.getElementById("actual_answer").value;
+
+        return actual_answer.indexOf(my_answer) >= 0;
+    }
+    </script>
 </head>
 
 <body>
     <div style="float:left; width:50%;">
-        <h1>SIGN UP</h1>
-        <p>
-            <label for="fullname">Full Name: <span class="required"></span></label>
-            <input type="text" id="fullname" name="fullname" value="" placeholder="Full Name" required="required" autofocus="autofocus" />
-            <br>
-        </p>
-        <p>
-            <label for="date of birth">Date of Birth: <span class="required">*</span></label>
-            <input type=date step=7 max=2015-09-08>
-        </p>
-        <form>
+        <form onsubmit="validate()">
+            <h1>SIGN UP</h1>
+            <p>
+                <label for="fullname">Full Name: <span class="required"></span></label>
+                <input type="text" id="fullname" name="fullname" value="" placeholder="Full Name" required="required" autofocus="autofocus" />
+                <br>
+            </p>
+            <p>
+                <label for="date of birth">Date of Birth: <span class="required">*</span></label>
+                <input type=date step=7 max=2015-09-08>
+            </p>
             <label for="gender"> Gender </label>
             <input type="radio" name="gender" value="male"> Male
             <input type="radio" name="gender" value="female"> Female
-        </form>
-        <p>
-            <form>
+            <p>
                 <label for="emailaddress">Email Address: <span class="required=" autofocus="autofocus"></span></label>
                 <input type="text" name="emailaddress" placeholder="example@ksc.com" />
-            </form>
-        </p>
-        <p>
-            <form>
+            </p>
+            <p>
                 Telephone:
                 <input type="tel" name="usrtel">
-            </form>
-        </p>
-        <p>
-            <form>
+            </p>
+            <p>
                 Current address:
                 <input type="text" name="current address">
                 <br>
-            </form>
-        </p>
-        <form>
+            </p>
             <p>
                 Permanent address :
                 <input type="text" name="permanent address">
@@ -105,48 +106,36 @@
                             <option value="ZW">Zimbabwe</option>
                         </select>
                         <br>
+                    </p>
+                    <p>
+                        <label for="university"> University/Institution <span class="required"></span></label>
+                        <input type="text" name="university or institution">
+                        <br>
+                    </p>
+                    <p>
+                        <label for="course"> Course <span class="required"></span></label>
+                        <input type="text" name="Course or field of study">
+                        <br>
+                    </p>
+                    <p>
+                        <label for="captchar"> Answer the question </label> <span class="captchar"></span>
+                        <br>
+                        <label>{{question}}</label>
+                        <br>
+                        <input style="display: none" id="actual_answer" value={{answers}}>
+                        <input type="text" placeholder="Type your answer" id="my_answer">
+                        <br>
+                    </p>
+                    <p>
+                        <label for="password">Password: <span class="required"></span></label>
+                        <input type="text" id="password" name="password" value="" placeholder="*********" required="required" autofocus="autofocus" />
+                    </p>
+                    <p>
+                        <INPUT TYPE="checkbox" NAME="Terms" VALUE="Conditions"> "I have read and agree to the following" <a target="_blank" href="http://ideamensch.com/terms-and-conditions" rel="nofollow">Terms and conditions</a>
+                    </p>
+                    <p>
+                    <input type="submit" value="Submit"><br>
                 </form>
-                </p>
-                <p>
-                    <label for="university"> University/Institution <span class="required"></span></label>
-                    <input type="text" name="university or institution">
-                    <br>
-                </p>
-                <p>
-                    <label for="course"> Course <span class="required"></span></label>
-                    <input type="text" name="Course or field of study">
-                    <br>
-                </p>
-                <p>
-                    <label for="captchar"> Captchar <span class="captchar"></span></label>
-                    <input type="text" name="Verify if you are a human">
-                    <br>
-                </p>
-                <p>
-                    <label for="password">Password: <span class="required"></span></label>
-                    <input type="text" id="password" name="password" value="" placeholder="*********" required="required" autofocus="autofocus" />
-                </p>
-                <p>
-                    <INPUT TYPE="checkbox" NAME="Terms" VALUE="Conditions"> "I have read and agree to the following" <a target="_blank" href="http://ideamensch.com/terms-and-conditions" rel="nofollow" >Terms and conditions</a>
-
-                </p>
-                <p>
-                <script type="text/javascript">
-                    $('#recaptchaButton').click(function (e) {
-    e.preventDefault();
-    $.post('https://examples.webscript.io/recaptcha',
-        { challenge: Recaptcha.get_challenge(), response:Recaptcha.get_response() },
-        function (data) {
-            if (data.success) {
-                alert("Captcha completed successfully!");
-                loadCaptcha();
-            } else {
-                alert("Captcha failed.");
-            }
-        });
-});</script>
-                </p>
-                <input type="submit" value="Submit">
     </div>
     <div style="float:right; width:50%; ">
         <form>
@@ -163,7 +152,6 @@
                     <td>Password</td>
                     <th>
                         <input type="password" id="myPsw" value="psw123">
-
                     </th>
                 </tr>
             </table>
