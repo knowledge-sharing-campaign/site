@@ -3,18 +3,17 @@
 
 <head>
     <style>
-    .h1 {
-        text-decoration: underline;
-    }
+        .h1 {
+            text-decoration: underline;
+        }
     </style>
     <script type="text/javascript" src="/static/js/md5.min.js"></script>
     <script type="text/javascript">
-    function validate() {
-        var my_answer = md5(document.getElementById("my_answer").value);
-        var actual_answer = document.getElementById("actual_answer").value;
-
-        return actual_answer.indexOf(my_answer) >= 0;
-    }
+        function validate() {
+            var my_answer = md5(document.getElementById("my_answer").value);
+            var actual_answer = document.getElementById("actual_answer").value;
+            return actual_answer.indexOf(my_answer) >= 0;
+        }
     </script>
 </head>
 
@@ -138,8 +137,6 @@
                     <p>
                     <input type="submit" value="Submit"><br>
                 </form>
-<<<<<<< HEAD
-=======
                 </p>
                 <p>
                     <label for="university"> University/Institution <span class="required"></span></label>
@@ -165,11 +162,11 @@
                     <INPUT TYPE="checkbox" NAME="Terms" VALUE="Conditions"> "I have read and agree to the following" <a target="_blank" href="http://ideamensch.com/terms-and-conditions" rel="nofollow" >Terms and conditions</a>
 
                 </p>
-                <p>
-                <script type="text/javascript">
-                    $('#recaptchaButton').click(function (e) {
-    e.preventDefault();
-    $.post('https://examples.webscript.io/recaptcha',
+    <p>
+        <script type="text/javascript">
+            $('#recaptchaButton').click(function (e) {
+                e.preventDefault();
+            $.post('https://examples.webscript.io/recaptcha',
         { challenge: Recaptcha.get_challenge(), response:Recaptcha.get_response() },
         function (data) {
             if (data.success) {
@@ -177,12 +174,10 @@
                 loadCaptcha();
             } else {
                 alert("Captcha failed.");
-            }
-        });
-});</script>
-                </p>
+            }});});     
+    </script>
+        </p>
                 <input type="submit" value="Submit">
->>>>>>> Noor , Joelle | modified registration
     </div>
     <div style="float:right; width:50%; ">
         <form>
@@ -198,12 +193,7 @@
                 <tr>
                     <td>Password</td>
                     <th>
-<<<<<<< HEAD
-                        <input type="password" id="myPsw" value="psw123">
-=======
                         <input type="password" id="myPsw">
-
->>>>>>> Noor , Joelle | modified registration
                     </th>
                 </tr>
             </table>
@@ -214,5 +204,4 @@
         </form>
     </div>
 </body>
-
 </html>
