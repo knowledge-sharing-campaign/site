@@ -15,6 +15,15 @@ h1 {
 }
   
 </style>
+<script type="text/javascript" src="/static/js/md5.min.js"></script>
+<script type="text/javascript">
+    function validate() {
+        var my_answer = md5(document.getElementById("my_answer").value);
+        var actual_answer = document.getElementById("actual_answer").value;
+
+        return actual_answer.indexOf(my_answer) >= 0;
+    }
+    </script>
 </head>
 
 <body>
@@ -275,11 +284,6 @@ h1 {
       <input type="text" name="course" id="course">
     </label>
   </p>
-  <p><span id="sprypassword1">
-    <label>Password : <span class="required"></span>
-      <input type="password" name="password" id="password">
-    </label>
-  <span class="passwordRequiredMsg">A value is required.</span></span></p>
   <p>
     <label>How did you get to know KSC?<br>
       <input type="checkbox" name="How did you know about KSC" value="checkbox" id="HowdidyouknowaboutKSC_0">
@@ -295,22 +299,24 @@ h1 {
     <br>
   </p>
   <p>
-                <INPUT TYPE="checkbox" NAME="Terms" VALUE="Conditions"> "I have read and agree to the following" <a target="_blank" href="£" rel="nofollow" >Terms and conditions</a></p>
-                <p>
-                <title>reCAPTCHA</title>
-     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                      <label for="captchar"> Answer the question </label> <span class="captchar"></span>
+                      <br>
+                      <label>{{answers}}</label>
+                       <br>
+                       <input style="display: none" id="actual_answer" value={{answers}}>
+                      <input type="text" placeholder="Type your answer" id="my_answer">
+                       <br>
+                  </p>
+                    <p>                        <label for="password">Password: <span class="required"></span></label>
+                       <input type="text" id="password" name="password" value="" placeholder="*********" required="required" autofocus="autofocus" />
+                  </p>
+                   <p>
+                       <INPUT TYPE="checkbox" NAME="Terms" VALUE="Conditions"> "I have read and agree to the following" <a target="_blank" href="http://ideamensch.com/terms-and-conditions" rel="nofollow">Terms and conditions</a>
+                    </p>
+                    <p>
+                    <input type="submit" value="Submit"><br>
   </head>
-  <body>
-    <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-      <br/>
-      <input type="submit" value="Submit">
-    </form>
-                </p>
-</form>
-<script type="text/javascript">
-var sprypassword1 = new Spry.Widget.ValidationPassword("sprypassword1");
-</script>
+  
 </body>
 
 </html>
