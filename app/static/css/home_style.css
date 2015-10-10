@@ -1,0 +1,112 @@
+body {
+background-color: #F0F0F0;
+width: 100%;
+margin: auto;
+padding-top: 200px;
+padding-bottom: 0px;
+
+
+}
+.clear{
+  clear:both;
+  margin: 0;
+  overflow: hidden;
+}
+
+#langbar{
+background-color: #505050;
+height: 20px;
+padding-top: 0px
+
+}
+
+#bar {
+font-family: 18px arial, sans-serif, Menlo, Monaco, Consolas, "Courier New", monospace;
+background-color: #DADAD9;
+height: 30px;
+float: right;
+text-align: center;
+padding: 10px;
+margin: 50px 345px 0 0;
+}
+
+#menu {
+padding-top: 0px;
+margin: 0px;
+border-top: 0px;
+}
+
+header{
+height: 160px;
+width: 100%;
+background: #ffffff;
+position: fixed;
+z-index: 10;
+padding-top: 0px;
+margin: 0;
+opacity: 50%;
+top: 0
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+top: 30px
+}
+
+li {
+display: inline;
+float: left;
+
+
+}
+
+li a {
+display: block;
+width: 100px;
+background-color: none;
+display:inline-block;
+text-align:center;
+}
+
+
+
+.logo{
+margin: 0 auto;
+padding: 20px;
+float: left;
+}
+
+.logo img{
+  max-width: 100px;
+  height: 100px;
+}
+
+
+a:link {
+color: #707070;
+text-decoration:none;
+}
+    
+a:hover {
+  color: #F0F0F0;
+}
+a::after {
+    display:block;
+    content:attr(title);
+    font-weight:bold;
+    color:transparent;
+    overflow:hidden;
+    visibility:hidden;
+    margin-bottom:-1px;
+
+}
+#socialmedia{
+
+    padding-right: 100px;
+    width: 400px;
+    vertical-align:auto;
+}
+
