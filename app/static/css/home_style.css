@@ -106,7 +106,19 @@ a::after {
 #socialmedia{
 
     padding-right: 100px;
-    width: 400px;
-    vertical-align:auto;
+    width: 120px;
+    float: right;
+    
+}
+ 
+#kscafric{
+  padding-right: 460px;
 }
 
+#cpy{
+  width: 1042px;
+}
+footer{
+  background: #ffffff;
+  opacity: 100%;
+}
