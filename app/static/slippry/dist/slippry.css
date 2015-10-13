@@ -306,7 +306,7 @@
   *zoom: 1;
   display: block;
   width: 100%;
-  margin: 1em 0 0;
+  margin: 1em 315px 0;
   padding: 0;
   list-style: none;
   text-align: center; }
@@ -319,7 +319,9 @@
     -webkit-border-radius: 50%;
     border-radius: 50%; }
     .sy-pager li.sy-active a {
-      background-color: #e24b70; }
+      background-color: #adc911; 
+      /*background-color: #e24b70;*/
+       }
     .sy-pager li a {
       width: 100%;
       height: 100%;
