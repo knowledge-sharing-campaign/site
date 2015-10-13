@@ -1,0 +1,11 @@
+body {
+    background: url('../../static/images/bg.jpg')no-repeat;
+    color: #fff;
+    font-size: 20px;
+    font-family: regular;
+    page-break-after: center;
+}
+
+h1 {
+    background: url('') no-repeat;
+}
