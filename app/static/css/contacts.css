@@ -1,0 +1,23 @@
+body {
+    background-color: #F0F0F0;
+}
+
+h1 {
+    margin-left: 20px;
+}
+form
+{
+	display: inline-block;
+	
+}
+p{
+text-align: right;
+}
+textarea
+{
+display: inline-block;
+}
+img{
+width: 350px;
+
+}
