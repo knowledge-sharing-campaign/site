@@ -1,0 +1,29 @@
+body{
+     border-radius: 30%;
+     border-style:25%;
+     border-style:;
+     background-image:url("../../static/images/bg.jpg");
+     font-size: 20px;
+     color: white;
+
+
+}
+div{
+	text-align: center;
+}
+h1{
+ color:white;
+ font-size: 50px;
+}
+a{
+  padding-right:1%;
+  padding-left: 2%;
+}
+button{
+	padding-right:1%;
+    padding-left: 2%;
+}
+input{
+	padding-right:1%;
+    padding-left: 2%;
+}
