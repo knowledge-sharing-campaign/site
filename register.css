@@ -7,14 +7,14 @@
 }*/
 
 body {
-background-color: #F0F0F0;
-margin-left: 20px;
+    background-color: #F0F0F0;
+    margin-left: 20px;
 }
 
 form {
-	display: inline-block;	
+    display: inline-block;
 }
 
 textarea {
-	display: inline-block;
+    display: inline-block;
 }

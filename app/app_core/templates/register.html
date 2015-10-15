@@ -1,14 +1,15 @@
-<!Doctype html>
+<!DOCTYPE html>
 
 <head>
-    <link type="text/css" rel="stylesheet" href="css/register.css"/>
-    <script type="text/javascript" src="js/register.js"></script>
+    <link type="text/css" rel="stylesheet" href="/static/css/register.css" />
+    <script type="text/javascript" src="/static/js/register.js"></script>
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20151006130033/recaptcha__en.js"></script>
 </head>
 
-<body>
+<body onload="document.register.firstname.focus()">
     <form name="register" id="register" method="post" onsubmit="validate()">
-    <title>Registration</title>
-    <h1>Registration</h1>    
+        <title>Registration</title>
+        <h1>Registration</h1>
         <div>
             <label>First Name </label>
             <input type="text" name="firstname" id="firstname" placeholder="First Name" maxlength="140" required>
@@ -173,112 +174,124 @@
         </div>
         <div>
             <label>Gender</label>
+        </div>
+        <div>
             <label>Male </label>
             <input type="radio" name="gender" value="radio" id="mgender">
+        </div>
+        <div>
             <label>Female </label>
             <input type="radio" name="gender" value="radio" id="fgender">
+        </div>
+        <div>
+            <label>Current Address </label>
+            <input type="text" name="currentaddress" id="currentaddress" placeholder="Current Address" maxlength="140" required>
+        </div>
+        <div>
+            <label>Permanent Address </label>
+            <input type="text" name="permanentaddress" id="permanentaddress" placeholder="Permanent Address" maxlength="140" required>
+        </div>
+        <div>
+            <label>Country <span class="required"></span></label>
+            <select name="country">
+                <option value="">Country</option>
+                <option value="DZ">Algeria</option>
+                <option value="AG">Angola</option>
+                <option value="BJ">Benin</option>
+                <option value="BW">Botswana</option>
+                <option value="BF">Burkina Faso</option>
+                <option value="BI">Burundi</option>
+                <option value="CM">Cameroon</option>
+                <option value="CV">Cape Verde</option>
+                <option value="CF">Central African Republic</option>
+                <option value="TD">Chad</option>
+                <option value="CG">Congo Brazzaville</option>
+                <option value="CG">Congo kinsasha</option>
+                <option value="CT">Cote D'Ivoire</option>
+                <option value="DJ">Djibouti</option>
+                <option value="EG">Egypt</option>
+                <option value="GQ">Equatorial Guinea</option>
+                <option value="ER">Eritrea</option>
+                <option value="ET">Ethiopia</option>
+                <option value="GA">Gabon</option>
+                <option value="GM">Gambia</option>
+                <option value="GH">Ghana</option>
+                <option value="GN">Guinea</option>
+                <option value="KE">Kenya</option>
+                <option value="LR">Liberia</option>
+                <option value="LY">Libya</option>
+                <option value="MG">Madagascar</option>
+                <option value="ML">Mali</option>
+                <option value="MR">Mauritania</option>
+                <option value="MA">Morocco</option>
+                <option value="MZ">Mozambique</option>
+                <option value="NA">Namibia</option>
+                <option value="NE">Niger</option>
+                <option value="NG">Nigeria</option>
+                <option value="RW">Rwanda</option>
+                <option value="ST">Sao Tome &amp; Principe</option>
+                <option value="SN">Senegal</option>
+                <option value="SC">Seychelles</option>
+                <option value="SL">Sierra Leone</option>
+                <option value="OI">Somalia</option>
+                <option value="ZA">South Africa</option>
+                <option value="SD">Sudan</option>
+                <option value="TZ">Tanzania</option>
+                <option value="TG">Togo</option>
+                <option value="TN">Tunisia</option>
+                <option value="UG">Uganda</option>
+                <option value="ZR">Zaire</option>
+                <option value="ZM">Zambia</option>
+                <option value="ZW">Zimbabwe</option>
+            </select>
+        </div>
+        <div>
+            <label>City </label>
+            <input type="text" name="city" id="city" placeholder="City" required>
+        </div>
+        <div>
+            <label>University </label>
+            <input type="text" name="university" id="university" placeholder="University" required>
+        </div>
+        <div>
+            <label>Course </label>
+            <input type="text" name="course" id="course" placeholder="Course" maxlength="140" required>
+        </div>
+        <div>
+            <label>Password </label>
+            <input type="text" name="password" id="password" placeholder="Password" required>
+        </div>
+        <div>
+            <label>Confirm Password </label>
+            <input type="text" name="confirmpassword" id="confirmpassword" placeholder="Type your password again." required>
+        </div>
+        <div>
+            <label>How did you get to know KSC?</label>
+        </div>
+        <div>
+            <label>Friends</label>
+            <input type="checkbox" name="How did you know about KSC" value="checkbox" id="HowdidyouknowaboutKSC_0">
+        </div>
+        <div>
+            <label>Social Medias</label>
+            <input type="checkbox" name="How did you know about KSC" value="checkbox" id="HowdidyouknowaboutKSC_1">
+        </div>
+        <div>
+            <label>Google Search</label>
+            <input type="checkbox" name="How did you know about KSC" value="checkbox" id="HowdidyouknowaboutKSC_2">
+        </div>
+        <div class="g-recaptcha" data-sitekey="6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-">
             <div>
-                <label>Current Address </label>
-                <input type="text" name="currentaddress" id="currentaddress" placeholder="Current Address" maxlength="140" required>
+                <div style="width: 304px; height: 78px;">
+                    <iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="" tabindex="0" vspace="0" width="304" title="recaptcha widget" role="presentation" height="78" id="I0_1444917289438" name="I0_1444917289438" src="https://www.google.com/recaptcha/api2/anchor?k=6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-&co=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbQ..&hl=en&v=r20151006130033&size=normal&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.Nb8ObINpBKA.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCNfRvoFX0pkA_cFRmUHgmkfPskI2w#id=I0_1444917289438&parent=https%3A%2F%2Fwww.google.com&pfname=&rpctoken=21596282"></iframe>
+                </div>
+                <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none; display: none; "></textarea>
             </div>
-            <div>
-                <label>Permanent Address </label>
-                <input type="text" name="permanentaddress" id="permanentaddress" placeholder="Permanent Address" maxlength="140" required>
-            </div>
-            <div>
-                <label>Country <span class="required"></span></label>
-                    <select name="country">
-                        <option value="">Country</option>
-                        <option value="DZ">Algeria</option>
-                        <option value="AG">Angola</option>
-                        <option value="BJ">Benin</option>
-                        <option value="BW">Botswana</option>
-                        <option value="BF">Burkina Faso</option>
-                        <option value="BI">Burundi</option>
-                        <option value="CM">Cameroon</option>
-                        <option value="CV">Cape Verde</option>
-                        <option value="CF">Central African Republic</option>
-                        <option value="TD">Chad</option>
-                        <option value="CG">Congo Brazzaville</option>
-                        <option value="CG">Congo kinsasha</option>
-                        <option value="CT">Cote D'Ivoire</option>
-                        <option value="DJ">Djibouti</option>
-                        <option value="EG">Egypt</option>
-                        <option value="GQ">Equatorial Guinea</option>
-                        <option value="ER">Eritrea</option>
-                        <option value="ET">Ethiopia</option>
-                        <option value="GA">Gabon</option>
-                        <option value="GM">Gambia</option>
-                        <option value="GH">Ghana</option>
-                        <option value="GN">Guinea</option>
-                        <option value="KE">Kenya</option>
-                        <option value="LR">Liberia</option>
-                        <option value="LY">Libya</option>
-                        <option value="MG">Madagascar</option>
-                        <option value="ML">Mali</option>
-                        <option value="MR">Mauritania</option>
-                        <option value="MA">Morocco</option>
-                        <option value="MZ">Mozambique</option>
-                        <option value="NA">Namibia</option>
-                        <option value="NE">Niger</option>
-                        <option value="NG">Nigeria</option>
-                        <option value="RW">Rwanda</option>
-                        <option value="ST">Sao Tome &amp; Principe</option>
-                        <option value="SN">Senegal</option>
-                        <option value="SC">Seychelles</option>
-                        <option value="SL">Sierra Leone</option>
-                        <option value="OI">Somalia</option>
-                        <option value="ZA">South Africa</option>
-                        <option value="SD">Sudan</option>
-                        <option value="TZ">Tanzania</option>
-                        <option value="TG">Togo</option>
-                        <option value="TN">Tunisia</option>
-                        <option value="UG">Uganda</option>
-                        <option value="ZR">Zaire</option>
-                        <option value="ZM">Zambia</option>
-                        <option value="ZW">Zimbabwe</option>
-                    </select>
-            </div>
-            <div>
-                <label>City </label>
-                <input type="text" name="city" id="city" placeholder="City" required>
-            </div>
-            <div>
-                <label>University </label>
-                <input type="text" name="university" id="university" placeholder="University" required>
-            </div>
-            <div>
-                <label>Course </label>
-                <input type="text" name="course" id="course" placeholder="Course" maxlength="140" required>
-            </div>
-            <div>
-                <label>Password </label>
-                <input type="text" name="password" id="password" placeholder="Password" required>
-            </div>
-             <div>
-                <label>Confirm Password </label>
-                <input type="text" name="confirmpassword" id="confirmpassword" placeholder="Type your password again." required>
-            </div>
-            <div>
-                <label>How did you get to know KSC?</label>
-                <br>
-                <input type="checkbox" name="How did you know about KSC" value="checkbox" id="HowdidyouknowaboutKSC_0"> Friends
-                <br>
-                <label>
-                    <input type="checkbox" name="How did you know about KSC" value="checkbox" id="HowdidyouknowaboutKSC_1"> Social Medias</label>
-                <br>
-                <label>
-                    <input type="checkbox" name="How did you know about KSC" value="checkbox" id="HowdidyouknowaboutKSC_2"> Google Search</label>
-                <br>
-            </div>
-            <!--<p><INPUT TYPE="checkbox" NAME="Terms" VALUE="Conditions"> "I have read and agree to the following" <a target="_blank" href="£" rel="nofollow" >Terms and conditions</a></p>
-  <p><title>reCAPTCHA</title>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-      <br/>
-      </form>-->
-            <input type="submit" value="Submit">
+        </div>
+        <div>
+            <input type="checkbox" name="Terms" value="conditions">I have read and agree to the <a target="_blank" href="£" rel="nofollow">Terms and conditions</a>
+        </div>
+        <input type="submit" value="Submit">
     </form>
 </body>
 

@@ -1,7 +1,6 @@
-(function() {
-  var validate;
-
-  validate = function() {
+var validate = function() {
+    console.log('call');
+    debugger;
     if (/^[A-Za-z]+$/.test(document.register.firstname.value))
         return true;
     alert("Please provide your first name.");
@@ -14,7 +13,7 @@
     document.register.lastname.focus();
     return false;
 
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.register.email.value))
+    if (/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(document.register.email.value))
         return true;
     alert("Please provide a valid e-mail address.");
     document.register.email.focus();
@@ -50,4 +49,4 @@
     document.register.City.focus();
     return false;
 };
-}).call(this);
+

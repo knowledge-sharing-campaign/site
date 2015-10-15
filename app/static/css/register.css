@@ -1,0 +1,24 @@
+body {
+    background-color: #F0F0F0;
+    margin-left: 20px;
+    display: inline-block;
+    height: 100%;
+}
+
+form, div {
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+label{
+	float: left;
+}
+input, select, textarea, #gender{
+	float: right;
+	padding: 5px;
+	margin: 10px;
+}
+textarea {
+    display: inline-block;
+}
