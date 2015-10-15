@@ -1,14 +1,14 @@
 <!Doctype html>
 
 <head>
-    <link type="text/css" rel="stylesheet" href="/css/register.css" />
-    <script type="text/javascript" src="/js/register.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/register.css"/>
+    <script type="text/javascript" src="js/register.js"></script>
 </head>
 
 <body>
-    <title>Registration</title>
-    <h1>Registration</h1>
     <form name="register" id="register" method="post" onsubmit="validate()">
+    <title>Registration</title>
+    <h1>Registration</h1>    
         <div>
             <label>First Name </label>
             <input type="text" name="firstname" id="firstname" placeholder="First Name" maxlength="140" required>
@@ -23,7 +23,7 @@
         </div>
         <div>
             <label>Username </label>
-            <input type="text" name="username" id="username" placeholder="Username" maxlength="140" required>
+            <input type="text" name="username" id="username" placeholder="Username" required>
         </div>
         <div>
             <label>Contact Number </label>
@@ -186,7 +186,7 @@
                 <input type="text" name="permanentaddress" id="permanentaddress" placeholder="Permanent Address" maxlength="140" required>
             </div>
             <div>
-                <label>Country <span class="required"></span>
+                <label>Country <span class="required"></span></label>
                     <select name="country">
                         <option value="">Country</option>
                         <option value="DZ">Algeria</option>
@@ -238,11 +238,14 @@
                         <option value="ZM">Zambia</option>
                         <option value="ZW">Zimbabwe</option>
                     </select>
-                </label>
             </div>
             <div>
                 <label>City </label>
-                <input type="text" name="city" id="city" placeholder="City" maxlength="140" required>
+                <input type="text" name="city" id="city" placeholder="City" required>
+            </div>
+            <div>
+                <label>University </label>
+                <input type="text" name="university" id="university" placeholder="University" required>
             </div>
             <div>
                 <label>Course </label>
@@ -250,7 +253,11 @@
             </div>
             <div>
                 <label>Password </label>
-                <input type="text" name="password" id="password" placeholder="Password" maxlength="140" required>
+                <input type="text" name="password" id="password" placeholder="Password" required>
+            </div>
+             <div>
+                <label>Confirm Password </label>
+                <input type="text" name="confirmpassword" id="confirmpassword" placeholder="Type your password again." required>
             </div>
             <div>
                 <label>How did you get to know KSC?</label>

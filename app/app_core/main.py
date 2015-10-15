@@ -12,7 +12,6 @@ def home():
 def about_us():
     return render_template("aboutus.html")
 
-
 @application.route("/contactus")
 def contact_us():
     return render_template("contactus.html")

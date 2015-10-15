@@ -1,18 +1,3 @@
-//function allnumeric(inputtxt)  
-//   {  
-//      var numbers = /^[0-9]+$/;  
-//      if(inputtxt.value.match(numbers))  
-//      {     
-//      return true;  
-//     }  
-//     else  
-//      {  
-//      alert('Please input numeric characters only');  
-//      document.form1.text1.focus();  
-//      return false;  
-//      }  
-//   }
-
 (function() {
   var validate;
 
@@ -27,12 +12,6 @@
         return true;
     alert("Please provide your first name.");
     document.register.lastname.focus();
-    return false;
-
-    if (/^[A-Za-z]+$/.test(document.register.surname.value))
-        return true;
-    alert("Please provide your surname.");
-    document.register.surname.focus();
     return false;
 
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.register.email.value))
