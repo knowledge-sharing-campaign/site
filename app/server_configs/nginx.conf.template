@@ -23,6 +23,10 @@ http {
             root /opt/ksc;
         }
 
+        location /forum/ {
+            proxy_pass http://localhost:8080/;
+        }
+
         location ~ \.css {
             root /opt/ksc;
             add_header Content-Type text/css;

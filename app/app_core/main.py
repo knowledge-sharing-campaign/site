@@ -23,6 +23,7 @@ def events():
 @application.route("/gallery")
 def gallery():
     return render_template("gallery.html")
+
 @application.route("/login")
 def login():
     return render_template("login.html")
@@ -30,3 +31,7 @@ def login():
 @application.route("/register")
 def register():
     return render_template("register.html")
+
+# @application.route("/forum")
+# def forum():
+#     return render_template("forum.html")
