@@ -2,10 +2,11 @@ body {
 background-color: #F0F0F0;
 width: 100%;
 margin: auto;
-padding-top: 69px;
+padding-top: 140px;
 padding-bottom: 0px;
 
 }
+
 
 h1{
     font-size: 40px;
@@ -43,7 +44,7 @@ border-top: 0px;
 header{
 height: 130px;
 width: 100%;
-background: #000000;
+background: #B8B8B8;
 position: fixed;
 z-index: 10;
 padding-top: 0px;
@@ -99,7 +100,7 @@ text-decoration:none;
     
 a:hover {
   color: #adc911;
-  /*color: #F0F0F0;*/
+  
 }
 a::after {
     /*display:block;*/
@@ -111,6 +112,10 @@ a::after {
     margin-bottom:1px;
 
 }
+a:visited {
+    color: #707070;
+  }
+
 #socialmedia{
 
     padding-right: 100px;
@@ -127,7 +132,7 @@ a::after {
   width: 1052px;
 }
 footer{
-  background: #ffffff;
+  background: #B8B8B8;
   opacity: 100%;
 }
 

@@ -15,6 +15,12 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
 
 
+    <script src="/static/sliderengine/jquery.js"></script>
+    <script src="/static/sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/sliderengine/amazingslider-1.css">
+    <script src="/static/sliderengine/initslider-1.js"></script>
+
+
 </head>
 <header>
 
@@ -32,23 +38,14 @@
 
 
 
-        <a href="#"><div class="logo"><img height="4%" src="/static/images/ksclogo3.png" alt="logo"></div></a>
-
- <div class="box">
-  <div class="container-4">
-    <input type="search" id="search" placeholder="Search..." />
-    <button class="icon"><i class="fa fa-search"></i></button>
-  </div>
-</div>
+        <a href="/"><div class="logo"><img height="4%" src="/static/images/ksclogo3.png" alt="logo"></div></a>
         <ul align="center" id="bar">
-
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/gallery">Gallery</a></li>
             <li><a href="/forum">Forum</a></li>
-            <li><a href="upcomingevents.html">Events</a></li>
-            <li><a href="login.html">Login</a></li>
-             <li><a href="/register">Registration</a></li>
-
+            <li><a href="/events">Events</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Registration</a></li>
         </ul>
 
     </div>
@@ -60,44 +57,39 @@
     </div>
 <body>
 
-      
 
-<div>
-<section class="slider_wrapper">
+
     
-    <article class="slider_block" aligin="center">
-        <ul id="slider">
-            <li>
-                <a href="#slide1"><img src="/static/images/1.png"></a>
-            </li>
-            <li>
-                <a href="#slide2"><img src="/static/images/2.png"></a>
-            </li>
-            <li>
-                <a href="#slide3"><img src="/static/images/3.png"></a>
-            </li>
-            <li>
-                <a href="#slide4"><img src="/static/images/4.png"></a>
-            </li>
-        </ul>
-    </article>
 
-
-</div>
-<script>
-$(function() {
-    var demo1 = $("#slider").slippry({
-        transition: 'fade',
-        useCSS: true,
-        speed: 1000,
-        pause: 3000,
-        auto: true,
-        preload: 'visible',
-        autoHover: false
-    });
-});
-</script>
-</section>
+<div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 48px;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="/static/image/1.jpg" alt="STAND UP"  title="STAND UP" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/image/2.jpg" alt="TRAINING TEAM"  title="TRAINING TEAM" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/image/3.jpg" alt="STUDENTS"  title="STUDENTS" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/image/4.jpg" alt="STUDENTS"  title="STUDENTS" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/image/5.jpg" alt="STUDENTS"  title="STUDENTS" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/image/6.jpg" alt="STUDENTS"  title="STUDENTS" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/image/7.jpg" alt="STUDENTS"  title="STUDENTS" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="/static/image/1-tn.jpg" alt="STAND UP" title="STAND UP" /></li>
+                <li><img src="/static/image/2-tn.jpg" alt="TRAINING TEAM" title="TRAINING TEAM" /></li>
+                <li><img src="/static/image/3-tn.jpg" alt="STUDENTS" title="STUDENTS" /></li>
+                <li><img src="/static/image/4-tn.jpg" alt="STUDENTS" title="STUDENTS" /></li>
+                <li><img src="/static/image/5-tn.jpg" alt="STUDENTS" title="STUDENTS" /></li>
+                <li><img src="/static/image/6-tn.jpg" alt="STUDENTS" title="STUDENTS" /></li>
+                <li><img src="/static/image/7-tn.jpg" alt="STUDENTS" title="STUDENTS" /></li>
+            </ul>
+        </div>
+    </div>
 
 
 
