@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-				<title>Popup Login and Registration</title>
-				<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-				<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-				<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
-				<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<body>
+<html>
+<head>
+<title>KSC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/static/slippry/dist/slippry.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="/static/css/home_style.css">
+
+<link rel="stylesheet" href="/static/slippry/dist/slippry.css">
+<link rel="stylesheet" href="/static/css/home.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
+
+
+    <script src="/static/sliderengine/jquery.js"></script>
+    <script src="/static/sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/sliderengine/amazingslider-1.css">
+    <script src="/static/sliderengine/initslider-1.js"></script>
+
+
+</head>
+<header>
+
+    <div id="langbar" align="right">
+        <select>
+            <option>Language</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+        </select>
+    </div>
+
+
+
+    <div id="menu" class="clear">
+
+
+
+        <a href="/"><div class="logo"><img height="4%" src="/static/images/ksclogo3.png" alt="logo"></div></a>
+        <ul align="center" id="bar">
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/forum">Forum</a></li>
+            <li><a href="/events">Events</a></li>
+            
+            <li><a href="/register">Registration</a></li>
+        </ul>
+
+    </div>
+
+
+    
+</header>
+
+    </div>
 			    <div class="container">
 				<a id="modal_trigger" href="#modal" class="btn">Click here to Login or register</a>
 				<div id="modal" class="popupContainer" style="display:none;">
