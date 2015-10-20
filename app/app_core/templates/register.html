@@ -60,26 +60,26 @@
 <body onload="document.register.firstname.focus()">
     <form name="register" id="register" method="post" onsubmit="validate()">
         <title>Registration</title>
-        <h1>Registration</h1>
+        <h1>Create a KSC account</h1>
         <div>
             <label>First Name </label>
-            <input type="text" name="firstname" id="firstname" placeholder="First Name" maxlength="140" required>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" maxlength="140" required>
         </div>
         <div>
             <label>Last Name </label>
-            <input type="text" name="lastname" id="lastname" placeholder="Last Name" maxlength="140" required>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" maxlength="140" required>
         </div>
         <div>
             <label>Email ID </label>
-            <input type="text" name="email" id="email" placeholder="Email ID" required>
+            <input type="text" name="email" id="email" placeholder="Enter your Email ID" required>
         </div>
         <div>
             <label>Username </label>
-            <input type="text" name="username" id="username" placeholder="Username" required>
+            <input type="text" name="username" id="username" placeholder="Choose your Username" required>
         </div>
         <div>
             <label>Contact Number </label>
-            <input type="text" name="contact" id="contact" placeholder="Contact Number" size="10" required>
+            <input type="text" name="contact" id="contact" placeholder="Enter your Contact Number" size="10" required>
         </div>
         <div>
             <label>Date Of Birth</label>
@@ -236,11 +236,11 @@
         </div>
         <div>
             <label>Current Address </label>
-            <input type="text" name="currentaddress" id="currentaddress" placeholder="Current Address" maxlength="140" required>
+            <input type="text" name="currentaddress" id="currentaddress" placeholder="Enter your Current Address" maxlength="140" required>
         </div>
         <div>
             <label>Permanent Address </label>
-            <input type="text" name="permanentaddress" id="permanentaddress" placeholder="Permanent Address" maxlength="140" required>
+            <input type="text" name="permanentaddress" id="permanentaddress" placeholder="Enter your Permanent Address" maxlength="140" required>
         </div>
         <div>
             <label>Country <span class="required"></span></label>
@@ -274,6 +274,7 @@
                 <option value="MG">Madagascar</option>
                 <option value="ML">Mali</option>
                 <option value="MR">Mauritania</option>
+                <option value="MU">Mauritius</option>
                 <option value="MA">Morocco</option>
                 <option value="MZ">Mozambique</option>
                 <option value="NA">Namibia</option>
@@ -298,23 +299,23 @@
         </div>
         <div>
             <label>City </label>
-            <input type="text" name="city" id="city" placeholder="City" required>
+            <input type="text" name="city" id="city" placeholder="Enter your city" required>
         </div>
         <div>
             <label>University </label>
-            <input type="text" name="university" id="university" placeholder="University" required>
+            <input type="text" name="university" id="university" placeholder="Enter your University" required>
         </div>
         <div>
             <label>Course </label>
-            <input type="text" name="course" id="course" placeholder="Course" maxlength="140" required>
+            <input type="text" name="course" id="course" placeholder="Enter your Course" maxlength="140" required>
         </div>
         <div>
             <label>Password </label>
-            <input type="text" name="password" id="password" placeholder="Password" required>
+            <input type="password" name="password" id="password" placeholder="Enter your Password" required>
         </div>
         <div>
             <label>Confirm Password </label>
-            <input type="text" name="confirmpassword" id="confirmpassword" placeholder="Type your password again." required>
+            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Type your password again." required>
         </div>
         <div>
             <label>How did you get to know KSC?</label>
@@ -340,7 +341,7 @@
             </div>
         </div>
         <div>
-            <input type="checkbox" name="Terms" value="conditions">I have read and agree to the <a target="_blank" href="£" rel="nofollow">Terms and conditions</a>
+            <p>I have read and agree to the <a target="_blank" href="£" rel="nofollow">Terms and conditions</a></p>
         </div>
         <input type="submit" value="Submit">
     </form>

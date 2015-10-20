@@ -3,22 +3,29 @@ body {
     margin-left: 20px;
     display: inline-block;
     height: 100%;
+    padding: 25px 100px 75px 625px;
 }
-
+form {
+    border: 1px solid gray;
+    padding: 25px;
+}
 form, div {
     display: block;
     clear: both;
     width: 100%;
+    text-align: center;
+    background-color: #B8B8B8;
 }
-
-label{
-	float: left;
+label {
+    float: left;
+    font: bold;
 }
 input, select, textarea, #gender{
-	float: right;
-	padding: 5px;
-	margin: 10px;
+    float: right;
+    padding: 5px;
+    margin: 10px;
 }
-textarea {
-    display: inline-block;
+.center {
+    width: 30%;
+    padding: 10px;
 }
