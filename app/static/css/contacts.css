@@ -21,3 +21,8 @@ img{
 width: 350px;
 
 }
+tr{
+	text-align: left;
+	padding-right: 100%;
+	padding:20px;
+}

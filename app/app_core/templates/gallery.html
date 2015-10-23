@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>KSC</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <title>KSC GALLERY</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="/static/slippry/dist/slippry.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <link rel="stylesheet" href="/static/css/home_style.css">
-    <link rel="stylesheet" href="/static/slippry/dist/slippry.css">
-    <link rel="stylesheet" href="/static/css/home.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
-    <script src="/static/sliderengine/jquery.js"></script>
-    <script src="/static/sliderengine/amazingslider.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/sliderengine/amazingslider-1.css">
-    <script src="/static/sliderengine/initslider-1.js"></script>
+<meta name="viewport" content="width=device-width">
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/static/slippry/dist/slippry.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="/static/css/home_style.css">
+
+<link rel="stylesheet" href="/static/slippry/dist/slippry.css">
+<link rel="stylesheet" href="/static/css/home.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
+
+   
+    <script src="/static/galleryengine/jquery.js"></script>
+    <script src="/static/galleryengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/galleryengine/amazingslider-1.css">
+    <script src="/static/galleryengine/initslider-1.js"></script>
+   
+    
 </head>
 <header>
+
     <div id="langbar" align="right">
         <select>
             <option>Language</option>
@@ -24,25 +32,61 @@
             <option value="French">French</option>
         </select>
     </div>
+
+
+
     <div id="menu" class="clear">
-        <a href="/">
-            <div class="logo"><img height="4%" src="/static/images/ksclogo3.png" alt="logo"></div>
-        </a>
+
+
+
+        <a href="/"><div class="logo"><img height="4%" src="/static/images/ksclogo3.png" alt="logo"></div></a>
+
+<!--  <div class="box">
+  <div class="container-4">
+    <input type="search" id="search" placeholder="Search..." />
+    <button class="icon"><i class="fa fa-search"></i></button>
+  </div>
+</div>
+ -->
         <ul align="center" id="bar">
             <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/gallery">Gallery</a></li>
             <li><a href="/forum">Forum</a></li>
             <li><a href="/events">Events</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/register">Registration</a></li>
         </ul>
+
     </div>
+
+
+    
 </header>
-</div>
+
+    </div>
 <body>
+    
+    
     <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 102px;">
         <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="/static/galleryimages/1.jpg" alt="STUDENTS"  title="STUDENTS" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/galleryimages/2.jpg" alt="TRAINER TEAM"  title="TRAINER TEAM" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/galleryimages/3.jpg" alt="DEV. + UI/UX"  title="DEV. + UI/UX" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/galleryimages/4.jpg" alt="SESSION"  title="SESSION" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/galleryimages/5.jpg" alt="BRAIN STORM"  title="BRAIN STORM" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/galleryimages/6.jpg" alt="DEV. SESSION"  title="DEV. SESSION" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+                <li><img src="/static/galleryimages/7.jpg" alt="JOINT SESSION"  title="JOINT SESSION" data-description="KNOWLEDGE SHARING CAMPAIGN" />
+                </li>
+            </ul>
             <ul class="amazingslider-thumbnails" style="display:none;">
-                <li><img src="" alt="STUDENTS" title="STUDENTS" /></li>
+                <li><img src="/static/galleryimages/1-tn.jpg" alt="STUDENTS" title="STUDENTS" /></li>
                 <li><img src="/static/galleryimages/2-tn.jpg" alt="TRAINER TEAM" title="TRAINER TEAM" /></li>
                 <li><img src="/static/galleryimages/3-tn.jpg" alt="DEV. + UI/UX" title="DEV. + UI/UX" /></li>
                 <li><img src="/static/galleryimages/4-tn.jpg" alt="SESSION" title="SESSION" /></li>
@@ -52,10 +96,6 @@
             </ul>
         </div>
     </div>
-   <p>&nbsp;</p>
-   <p>&nbsp;</p>
-   <p>&nbsp;</p>
-   <p>&nbsp;</p>
 </body>
 <footer align="center">
     <div id="wrap">
@@ -98,4 +138,5 @@
             </div>
             </div>
     </footer>
+    </body>
 </html>
