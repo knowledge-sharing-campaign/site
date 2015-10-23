@@ -48,6 +48,7 @@ def termscons():
 def reset():
     return render_template("forgotpassword.html")
 
+
 # @application.route("/forum")
 # def forum():
 #     return render_template("forum.html")

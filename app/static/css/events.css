@@ -1,11 +1,9 @@
-body {
+.event_content {
 background-color: #F0F0F0;
 width: 100%;
 margin: auto;
-padding-top: 140px;
+padding-top: 10px;
 padding-bottom: 0px;
-
-
 }
 .box_layout {
     overflow: auto;
@@ -17,6 +15,16 @@ padding-bottom: 0px;
     margin-bottom: 25px;
     
 
+}
+#heading{
+    
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	line-height: 25px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
 }
 
 nav {
