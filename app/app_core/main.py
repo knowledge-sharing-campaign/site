@@ -44,6 +44,10 @@ def partners():
 def termscons():
     return render_template("termscons.html")
 
+@application.route("/reset")
+def reset():
+    return render_template("forgotpassword.html")
+
 # @application.route("/forum")
 # def forum():
 #     return render_template("forum.html")
