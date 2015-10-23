@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>KSC</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="/static/slippry/dist/slippry.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="/static/css/home_style.css">
     <link rel="stylesheet" href="/static/slippry/dist/slippry.css">
     <link rel="stylesheet" href="/static/css/home.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
-    <script src="/static/sliderengine/jquery.js"></script>
-    <script src="/static/sliderengine/amazingslider.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/sliderengine/amazingslider-1.css">
-    <script src="/static/sliderengine/initslider-1.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/css/contacts.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/con.css">
 </head>
 <header>
     <div id="langbar" align="right">
@@ -34,7 +27,7 @@
             <li><a href="/aboutus">About Us</a></li>
             <li><a href="/gallery">Gallery</a></li>
             <li><a href="/forum">Forum</a></li>
-            <li><a href="/upcomingevents">Events</a></li>
+            <li><a href="/events">Events</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/register">Registration</a></li>
         </ul>
@@ -43,47 +36,56 @@
 </div>
 
 <body>
-    <h1>CONTACT US:</h1>
-<div>
-<form id="contactform" name="contactform" method="post" action="">
-  <p>
-    <label>FullName :
-      <input type="text" name="Name" id="Name" />
-    </label>
-  </p>
-  <p>
-    <label>Phone Number :
-      <input type="text" name="Phone number" id="Phone number" />
-    </label>
-  </p>
-  <p>
-    <label>Email Id :
-      <input type="text" name="email" id="email" />
-    </label>
-  </p>
-  <p>
-    <label>Address :
-      <input type="text" name="address" id="address" />
-    </label>
-  </p>
-  <p>
-    <label>Enquiry :
-      <textarea align="left" name="Enquiry" id="Enquiry" cols="30" rows="5"></textarea>
-    </label>
-  </p>
-  <p>
-    <input type="submit" name="Send" id="Send" value="Submit" />
-  </p>
-</form></div>
-<p>
-<h2>Email:</h2> <address> <a href="mailto:charles.mberikimpolo@gmail.com" target="_blank"> </address> knowledgesharingcampaign@gmail.com
+
+<div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1">
+      
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+      <p class="text">
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+      </p>
+      
+      
+      <div class="submit">
+        <input type="submit" value="SEND" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <div id="col" align="center">
 <h2>Office Address:</h2> 
-ThoughtWorks Technologies (India) Pvt Ltd. 3rd Floor, Apurupa Silpi, Beside H.P. Petrol Bunk (KFC Building), Gachibowli, Hyderabad - 500032, India
+<h2>ThoughtWorks Technologies (India) Pvt Ltd. 3rd Floor, Apurupa Silpi, Beside H.P. Petrol Bunk (KFC Building), Gachibowli, Hyderabad - 500032, India</h2>
 
 <h2>Telephone:</h2>
- 04012345679
+<h2> 04012345679</h2>
 
-<h2>Fax:</h2> 04012456787</p>
+<h2>Fax:</h2>
+</div>
 </body>
     <footer align="center">
     <div id="wrap">
