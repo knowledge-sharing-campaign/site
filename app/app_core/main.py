@@ -32,6 +32,18 @@ def login():
 def register():
     return render_template("register.html")
 
+@application.route("/privacy")
+def privacy():
+    return render_template("privacy.html")
+
+@application.route("/partners")
+def partners():
+    return render_template("partners.html")
+
+@application.route("/termscons")
+def termscons():
+    return render_template("termscons.html")
+
 # @application.route("/forum")
 # def forum():
 #     return render_template("forum.html")

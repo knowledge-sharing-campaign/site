@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>KSC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/static/slippry/dist/slippry.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="/static/css/home_style.css">
+    <link rel="stylesheet" href="/static/slippry/dist/slippry.css">
+    <link rel="stylesheet" href="/static/css/home.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
+    <script src="/static/sliderengine/jquery.js"></script>
+    <script src="/static/sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/sliderengine/amazingslider-1.css">
+    <script src="/static/sliderengine/initslider-1.js"></script>
+</head>
+<header>
+    <div id="langbar" align="right">
+        <select>
+            <option>Language</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+        </select>
+    </div>
+    <div id="menu" class="clear">
+        <a href="/">
+            <div class="logo"><img height="4%" src="/static/images/ksclogo3.png" alt="logo"></div>
+        </a>
+        <ul align="center" id="bar">
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/forum">Forum</a></li>
+            <li><a href="/upcomingevents">Events</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Registration</a></li>
+        </ul>
+    </div>
+</header>
+</div>
       <head>
           <title>About Us</title>
           <link rel="stylesheet" type="text/css"  href='../../static/css/aboutus.css'/>
@@ -14,10 +53,10 @@
       	<div header>
       		<table border="1" width="100%" id="Table1">
       			<tr font-size="14" align="center">
-      				<td><a href="/">Home</a></td>
-      				<td><a href="aboutus">About Us</a></td>
-      				<td><a href="gallery">Gallery</a></td>
-      				<td><a href="events">Events</a></td>
+      				<td><a href="gallery.html">Home</a></td>
+      				<td><a href="aboutus.html">About Us</a></td>
+      				<td><a href="aboutus.html">Gallery</a></td>
+      				<td><a href="aboutus.html">Events</a></td>
       			</tr>
       		</table>
       	</div>
@@ -66,4 +105,41 @@
                   <p> Connect us with aligned organisations which can financially support students and address our budget constraints.</p></ul>
       	</div>
       </body>
+      <footer align="center">
+        <ls>
+            <div align="right">
+                <a href="https://www.facebook.com/Knowledge-Sharing-Campaign-2017193451752977/timeline/?ref=br_tf" target="_blank">
+                    <img alt="Go to KSC facebook page" align="right" border="0" height="40" src="/static/images/facebook1.png" width="40">
+                </a>
+                <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" target="_blank"><img alt="Go to KSC google+ page" align="right" border="0" height="40" src="/static/images/google1.png" width="40"></a>
+                <a href="https://twitter.com/hashtag/KnowledgeSharingCampaign?src=hash&lang=en" target="_blank">
+                    <img alt="Go to KSC facebook page" border="0" height="40" src="/static/images/twitter1.png" width="40">
+                </a>
+            </div>
+            <div align="justify">
+                <ls>
+                    <a id="contactus" href="/contactus">
+                        <font size="3"><b> Contact Us </b></font>
+                    </a>
+                   
+                </ls>&nbsp;
+                <ls>
+                    <a id="partners" href="/partners">
+                        <font size="3"><b>| Our Partners  </b></font>
+                    </a>
+                    
+                </ls>&nbsp;
+                <ls>
+                    <a id="termscons" href="/termscons">
+                        <font size="3"><b>| Terms&Conditions </font></a>
+                    
+              </ls>&nbsp;
+                <ls>
+                    <a id="privacy" href="/privacy">
+                        <font size="3"><b>| Privacy Policy </font></a>
+                </ls>&nbsp;
+                    &nbsp;
+        <ls><a href=""><b>| Copyright &copy; 2015 &middot; KnowledgeSharingCampaign &middot; </a></ls>
+        </div>
+    </footer>
 </html>
