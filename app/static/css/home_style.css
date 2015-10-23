@@ -4,6 +4,7 @@ width: 100%;
 margin: auto;
 padding-top: 140px;
 padding-bottom: 0px;
+overflow: hidden;
 
 }
 
@@ -220,3 +221,22 @@ footer{
   .container-4:hover button.icon:hover{
     background: white;
   }
+footer{}
+  #wrap {min-height: 100%;}
+
+#main {overflow:auto;
+  padding-bottom: 150px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;} 
+
+/*Opera Fix*/
+body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;/
+}

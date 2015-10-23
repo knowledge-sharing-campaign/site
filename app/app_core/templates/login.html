@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -178,199 +178,22 @@
 		</p></div1></p>
 		</div>
 		</body>
-=======
-<!DOCTYPE html>
-<head>
-    <title>KSC</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="/static/slippry/dist/slippry.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <link rel="stylesheet" href="/static/css/home_style.css">
-    <link rel="stylesheet" href="/static/slippry/dist/slippry.css">
-    <link rel="stylesheet" href="/static/css/home.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
-    <script src="/static/sliderengine/jquery.js"></script>
-    <script src="/static/sliderengine/amazingslider.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/sliderengine/amazingslider-1.css">
-    <script src="/static/sliderengine/initslider-1.js"></script>
-    <script type="text/javascript">
-					$("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
-
-					$(function(){
-						// Calling Login Form
-						$("#login_form").click(function(){
-							$(".social_login").hide();
-							$(".user_login").show();
-							return false;
-						});
-
-						// Calling Register Form
-						$("#register_form").click(function(){
-							$(".social_login").hide();
-							$(".user_register").show();
-							$(".header_title").text('Register');
-							return false;
-						});
-
-						// Going back to Social Forms
-						$(".back_btn").click(function(){
-							$(".user_login").hide();
-							$(".user_register").hide();
-							$(".social_login").show();
-							$(".header_title").text('Login');
-							return false;
-						});})
-				</script>
-		        <link rel="stylesheet" type="text/css"  href='../../static/css/login.css'/>
-</head>
-<header class="popupHeader">
-						<span class="header_title">Login</span>
-						<span class="modal_close"><i class="fa fa-times"></i></span>
-					</header>
-<header>
-    <div id="langbar" align="right">
-        <select>
-            <option>Language</option>
-            <option value="English">English</option>
-            <option value="French">French</option>
-        </select>
-    </div>
-    <div id="menu" class="clear">
-        <a href="/">
-            <div class="logo"><img height="4%" src="/static/images/ksclogo3.png" alt="logo"></div>
-        </a>
-        <ul align="center" id="bar">
-            <li><a href="/aboutus">About Us</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/forum">Forum</a></li>
-            <li><a href="/upcomingevents">Events</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Registration</a></li>
-        </ul>
-    </div>
-</header>
-</div>
-<html lang="en">
-				<title>Popup Login and Registration</title>
-				<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-				<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-				<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
-				<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<body>
-			    <div class="container">
-				<a id="modal_trigger" href="#modal" class="btn">Click here to Login or register</a>
-				<div id="modal" class="popupContainer" style="display:none;">
-					
-					<section class="popupBody">
-						<!-- Social Login -->
-						<div class="social_login">
-							<div class="">
-								<a href="#" class="social_box fb">
-									<span class="icon"><i class="fa fa-facebook"></i></span>
-									<span class="icon_title">Connect with Facebook</span>		
-								</a>
-								<a href="#" class="social_box google">
-									<span class="icon"><i class="fa fa-google-plus"></i></span>
-									<span class="icon_title">Connect with Google</span>
-								</a>
-							</div>
-							<div class="centeredText">
-								<span>Or use your Email address</span>
-							</div>
-							<div class="action_btns">
-								<div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
-								<div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
-							</div>
-						</div>
-						<!-- Username & Password Login form -->
-						<div class="user_login">
-							<form>
-								<label>Email / Username</label>
-								<input type="text" />
-								<br />
-								<label>Password</label>
-								<input type="password" />
-								<br />
-								<div class="checkbox">
-									<input id="remember" type="checkbox" />
-									<label for="remember">Remember me on this computer</label>
-								</div>
-								<div class="action_btns">
-									<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-									<div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
-								</div>
-							</form>
-
-							<a href="#" class="forgot_password">Forgot password?</a>
-						</div>
-						<!-- Register Form -->
-						<div class="user_register">
-							<form>
-								<label>Full Name</label>
-								<input type="text" />
-								<br />
-
-								<label>Email Address</label>
-								<input type="email" />
-								<br />
-
-								<label>Password</label>
-								<input type="password" />
-								<br />
-
-								<div class="checkbox">
-									<input id="send_updates" type="checkbox" />
-									<label for="send_updates">Send me occasional email updates</label>
-								</div>
-		<div class="action_btns">
-		<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-		<div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
-		</div>
-		</form>
-		</div>
-		</section>
-		</div>
-		</div>
-		   <div>
-		   <H1>LOGIN</H1>
-		  <p>
-		    <label for="username">Username :<span class="required"></span></label>
-		    <input type="text" name="username" id="username">
-		  </p>
-		  <p> 
-		  <label for="password">Password :<span class="required"></span></label>
-		    <input type="password" id="password" name="password" value="" placeholder="Password" required autofocus/>
-		    <p><button>Submit</button><div1><a href="forgotpassword.html">Forgot Password</a></a>
-		</p></div1></p>
-		</div>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		</body>
         <footer align="center">
+    <div id="wrap">
+    <div id="right">
+    <ul>
         <ls>
             <div align="right">
                 <a href="https://www.facebook.com/Knowledge-Sharing-Campaign-2017193451752977/timeline/?ref=br_tf" target="_blank">
                     <img alt="Go to KSC facebook page" align="right" border="0" height="40" src="/static/images/facebook1.png" width="40">
                 </a>
                 <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" target="_blank"><img alt="Go to KSC google+ page" align="right" border="0" height="40" src="/static/images/google1.png" width="40"></a>
-
                 <a href="https://twitter.com/hashtag/KnowledgeSharingCampaign?src=hash&lang=en" target="_blank">
                     <img alt="Go to KSC facebook page" border="0" height="40" src="/static/images/twitter1.png" width="40">
                 </a>
-            </div>
-            </ls>
-            <div align="justify">
-                <ls>
+    </div>
+    <div id="main" align="left">
+    <ls>
                     <a id="contactus" href="/contactus">
                         <font size="3"><b> Contact Us </b></font>
                     </a>
@@ -392,8 +215,8 @@
                         <font size="3"><b>| Privacy Policy </font></a>
                 </ls>&nbsp;
                     &nbsp;
-        <ls><a href=""><b>| Copyright &copy; 2015 &middot; KnowledgeSharingCampaign &middot; </a></ls>
-        </div>
+    <ls><a href=""><b>| Copyright &copy; 2015 &middot; KnowledgeSharingCampaign &middot; </a></ls>
+            </div>
+            </div>
     </footer>
->>>>>>> Rim|#42|footer modification
 </html>
