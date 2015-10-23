@@ -1,13 +1,20 @@
 body {
     background-color: #F0F0F0;
-    display: inline-block;
-    width: 40%;
+    display: inline-block;   
 }
-
-form, div {
+#register{
+    padding: 25px 25px 25px 25px;
+    margin: 50px 600px 50px 600px;
+    width: 25%;
+}
+#register{
     display: block;
     clear: both;
-    background-color: #B8B8B8;
+    background-color: #D8D8D8;
+}
+div{
+    display: block;
+    clear: both;
 }
 label{
     float: left;
@@ -17,18 +24,36 @@ label{
     margin-top: 12px;
     clear: left; 
 }
-input, select, textarea, #gender{
+input, select, textarea{
     float: right;
     padding: 8px;
     margin: 5px;
 }
-
-input, textarea, #gender{
+input, textarea{
     width:18em;
+    font-size: 16px black;
 }
-#country{
+#country, #gender{
     width: 20em;
 }
 #register{
     text-align: center;
+}
+.g-recaptcha{
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+#question{
+    width: 18em;
+}
+.question{
+     padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+select{
+    line-height:30px;
+    height: 30px;
+    background: #B8B8B8;
 }
