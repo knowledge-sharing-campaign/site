@@ -6,7 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link type="text/css" rel="stylesheet" href="/static/css/home_style.css">
-  </head>
+    <link type="text/css" rel="stylesheet" href="/static/css/register.css"/>
+    <script type="text/javascript" async=""
+            src="https://www.gstatic.com/recaptcha/api2/r20151006130033/recaptcha__en.js"></script>
+</head>
 <header>
     <div align="right">
         <select id="langbar">
@@ -28,281 +31,288 @@
         </ul>
     </div>
 </header>
-</div>
-<link type="text/css" rel="stylesheet" href="/static/css/register.css" />
-<script type="text/javascript" src="/static/js/register.js"></script>
-<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20151006130033/recaptcha__en.js"></script>
-</head>
 
 <body onload="document.register.firstname.focus()">
-    <form name="register" id="register" method="post" onsubmit="validate()">
-        <title>Registration</title>
-        <h1>Create a KSC account</h1>
+<form name="register" id="register" method="post" onsubmit="return validateForm()">
+    <title>Registration</title>
+
+    <h1>Create a KSC account</h1>
+
+    <div>
+        <label>First Name </label>
+        <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" maxLength="140" required>
+    </div>
+    <div>
+        <label>Last Name </label>
+        <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" maxLength="140" required>
+    </div>
+    <div>
+        <label>Email ID </label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email ID" required>
+    </div>
+    <div>
+        <label>Username </label>
+        <input type="text" name="username" id="username" placeholder="Choose your Username" required>
+    </div>
+    <div>
+        <label>Password </label>
+        <input type="password" name="password" id="password" placeholder="Enter your Password" required>
+    </div>
+    <div>
+        <label>Confirm Password </label>
+        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Type your password again."
+               required>
+    </div>
+    <div>
+        <label>Contact Number </label>
+        <input type="text" name="contact" id="contact" placeholder="Enter your Contact Number" maxLength="10" required>
+    </div>
+    <div>
+        <label>Date Of Birth</label>
+        <select name="year" required>
+            <option value="">Please select</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+            <option value="1989">1989</option>
+            <option value="1988">1988</option>
+            <option value="1987">1987</option>
+            <option value="1986">1986</option>
+            <option value="1985">1985</option>
+            <option value="1984">1984</option>
+            <option value="1983">1983</option>
+            <option value="1982">1982</option>
+            <option value="1981">1981</option>
+            <option value="1980">1980</option>
+            <option value="1979">1979</option>
+            <option value="1978">1978</option>
+            <option value="1977">1977</option>
+            <option value="1976">1976</option>
+            <option value="1975">1975</option>
+            <option value="1974">1974</option>
+            <option value="1973">1973</option>
+            <option value="1972">1972</option>
+            <option value="1971">1971</option>
+            <option value="1970">1970</option>
+            <option value="1969">1969</option>
+            <option value="1968">1968</option>
+            <option value="1967">1967</option>
+            <option value="1966">1966</option>
+            <option value="1965">1965</option>
+            <option value="1964">1964</option>
+            <option value="1963">1963</option>
+            <option value="1962">1962</option>
+            <option value="1961">1961</option>
+            <option value="1960">1960</option>
+            <option value="1959">1959</option>
+            <option value="1958">1958</option>
+            <option value="1957">1957</option>
+            <option value="1956">1956</option>
+            <option value="1955">1955</option>
+            <option value="1954">1954</option>
+            <option value="1953">1953</option>
+            <option value="1952">1952</option>
+            <option value="1951">1951</option>
+            <option value="1950">1950</option>
+        </select>
+        <select name="month" required>
+            <option value="">Please select</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <select name="day" required>
+            <option value="">Please select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+    </div>
+    <div>
+        <label>Gender</label><br>
+        <select id="gender" required>
+            <option value="">Please select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Current Address </label>
+        <textarea type="text" name="currentaddress" id="currentaddress" placeholder="Current Address" required></textarea>
+    </div>
+    <div>
+        <label>Permanent Address </label>
+        <textarea type="text" name="permanentaddress" id="permanentaddress" placeholder="Permanent Address" required></textarea>
+    </div>
+    <div>
+        <label>Country <span class="required"></span></label>
+        <select name="country" id="country">
+            <option value="">Please Select</option>
+            <option value="DZ">Algeria</option>
+            <option value="AG">Angola</option>
+            <option value="BJ">Benin</option>
+            <option value="BW">Botswana</option>
+            <option value="BF">Burkina Faso</option>
+            <option value="BI">Burundi</option>
+            <option value="CM">Cameroon</option>
+            <option value="CV">Cape Verde</option>
+            <option value="CF">Central African Republic</option>
+            <option value="TD">Chad</option>
+            <option value="CG">Congo Brazzaville</option>
+            <option value="CG">Congo kinsasha</option>
+            <option value="CT">Cote D'Ivoire</option>
+            <option value="DJ">Djibouti</option>
+            <option value="EG">Egypt</option>
+            <option value="GQ">Equatorial Guinea</option>
+            <option value="ER">Eritrea</option>
+            <option value="ET">Ethiopia</option>
+            <option value="GA">Gabon</option>
+            <option value="GM">Gambia</option>
+            <option value="GH">Ghana</option>
+            <option value="GN">Guinea</option>
+            <option value="KE">Kenya</option>
+            <option value="LR">Liberia</option>
+            <option value="LY">Libya</option>
+            <option value="MG">Madagascar</option>
+            <option value="ML">Mali</option>
+            <option value="MR">Mauritania</option>
+            <option value="MU">Mauritius</option>
+            <option value="MA">Morocco</option>
+            <option value="MZ">Mozambique</option>
+            <option value="NA">Namibia</option>
+            <option value="NE">Niger</option>
+            <option value="NG">Nigeria</option>
+            <option value="RW">Rwanda</option>
+            <option value="ST">Sao Tome &amp; Principe</option>
+            <option value="SN">Senegal</option>
+            <option value="SC">Seychelles</option>
+            <option value="SL">Sierra Leone</option>
+            <option value="OI">Somalia</option>
+            <option value="ZA">South Africa</option>
+            <option value="SD">Sudan</option>
+            <option value="TZ">Tanzania</option>
+            <option value="TG">Togo</option>
+            <option value="TN">Tunisia</option>
+            <option value="UG">Uganda</option>
+            <option value="ZR">Zaire</option>
+            <option value="ZM">Zambia</option>
+            <option value="ZW">Zimbabwe</option>
+        </select>
+    </div>
+    <div>
+        <label>City </label>
+        <input type="text" name="city" id="city" placeholder="Enter your city" required>
+    </div>
+    <div>
+        <label>University </label>
+        <input type="text" name="university" id="university" placeholder="Enter your University" required>
+    </div>
+    <div>
+        <label>Course </label>
+        <input type="text" name="course" id="course" placeholder="Enter your Course" maxLength="140" required>
+    </div>
+    <div class="question">
         <div>
-            <label>First Name </label>
-            <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" maxlength="140" required>
+            <label id="question">How did you get to know KSC?</label>
         </div>
         <div>
-            <label>Last Name </label>
-            <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" maxlength="140" required>
+            <input name="question" type="radio" value="friends" required>Friends<br>
+            <input name="question" type="radio" value="social">Social Media<br>
+            <input name="question" type="radio" value="google">Google Search<br>
         </div>
+    </div>
+    <div class="g-recaptcha" data-sitekey="6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-">
         <div>
-            <label>Email ID </label>
-            <input type="text" name="email" id="email" placeholder="Enter your Email ID" required>
-        </div>
-        <div>
-            <label>Username </label>
-            <input type="text" name="username" id="username" placeholder="Choose your Username" required>
-        </div>
-         <div>
-            <label>Password </label>
-            <input type="password" name="password" id="password" placeholder="Enter your Password" required>
-        </div>
-        <div>
-            <label>Confirm Password </label>
-            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Type your password again." required>
-        </div>
-        <div>
-            <label>Contact Number </label>
-            <input type="text" name="contact" id="contact" placeholder="Enter your Contact Number" size="10" required>
-        </div>
-        <div>
-            <label>Date Of Birth</label>
-            <select name="year" required>
-                <option value="na">Year</option>
-                <option value="2009">2009</option>
-                <option value="2008">2008</option>
-                <option value="2007">2007</option>
-                <option value="2006">2006</option>
-                <option value="2005">2005</option>
-                <option value="2004">2004</option>
-                <option value="2003">2003</option>
-                <option value="2002">2002</option>
-                <option value="2001">2001</option>
-                <option value="2000">2000</option>
-                <option value="1999">1999</option>
-                <option value="1998">1998</option>
-                <option value="1997">1997</option>
-                <option value="1996">1996</option>
-                <option value="1995">1995</option>
-                <option value="1994">1994</option>
-                <option value="1993">1993</option>
-                <option value="1992">1992</option>
-                <option value="1991">1991</option>
-                <option value="1990">1990</option>
-                <option value="1989">1989</option>
-                <option value="1988">1988</option>
-                <option value="1987">1987</option>
-                <option value="1986">1986</option>
-                <option value="1985">1985</option>
-                <option value="1984">1984</option>
-                <option value="1983">1983</option>
-                <option value="1982">1982</option>
-                <option value="1981">1981</option>
-                <option value="1980">1980</option>
-                <option value="1979">1979</option>
-                <option value="1978">1978</option>
-                <option value="1977">1977</option>
-                <option value="1976">1976</option>
-                <option value="1975">1975</option>
-                <option value="1974">1974</option>
-                <option value="1973">1973</option>
-                <option value="1972">1972</option>
-                <option value="1971">1971</option>
-                <option value="1970">1970</option>
-                <option value="1969">1969</option>
-                <option value="1968">1968</option>
-                <option value="1967">1967</option>
-                <option value="1966">1966</option>
-                <option value="1965">1965</option>
-                <option value="1964">1964</option>
-                <option value="1963">1963</option>
-                <option value="1962">1962</option>
-                <option value="1961">1961</option>
-                <option value="1960">1960</option>
-                <option value="1959">1959</option>
-                <option value="1958">1958</option>
-                <option value="1957">1957</option>
-                <option value="1956">1956</option>
-                <option value="1955">1955</option>
-                <option value="1954">1954</option>
-                <option value="1953">1953</option>
-                <option value="1952">1952</option>
-                <option value="1951">1951</option>
-                <option value="1950">1950</option>
-            </select>
-            <select name="month" required>
-                <option value="na">Month</option>
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-            </select>
-            <select name="day" required onchange="return wait_for_load(this, event, function() { editor_date_month_change(this, 'birthday_day','birthday_year'); });">
-                <option value="na">Day</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select>
-        </div>
-        <div>
-            <label>Gender</label><br>
-            <select id="gender" required>
-                <option value="na">Gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">female</option>
-            </select>
+            <div style="width: 304px; height: 78px;">
+                <iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="" tabindex="0"
+                        vspace="0" width="304" title="recaptcha widget" role="presentation" height="78"
+                        id="I0_1444917289438" name="I0_1444917289438"
+                        src="https://www.google.com/recaptcha/api2/anchor?k=6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-&co=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbQ..&hl=en&v=r20151006130033&size=normal&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.Nb8ObINpBKA.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCNfRvoFX0pkA_cFRmUHgmkfPskI2w#id=I0_1444917289438&parent=https%3A%2F%2Fwww.google.com&pfname=&rpctoken=21596282">
+                </iframe>
             </div>
+            <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                      style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none; display: none; "></textarea>
         </div>
-        <div>
-            <label>Current Address </label>
-            <input type="text" name="currentaddress" id="currentaddress" placeholder="Current Address line 1" maxlength="140" required>
-            <input type="text" name="currentaddress" id="currentaddress" placeholder="Current Address Line 2" maxlength="140" required>
-        </div>
-        <div>
-            <label>Permanent Address </label>
-            <input type="text" name="permanentaddress" id="permanentaddress" placeholder="Permanent Address Line 1" maxlength="140" required>
-            <input type="text" name="permanentaddress" id="permanentaddress" placeholder="Permanent Address Line 2" maxlength="140" required>
-        </div>
-        <div>
-            <label>Country <span class="required"></span></label>
-            <select name="country" id="country">
-                <option value="">Country</option>
-                <option value="DZ">Algeria</option>
-                <option value="AG">Angola</option>
-                <option value="BJ">Benin</option>
-                <option value="BW">Botswana</option>
-                <option value="BF">Burkina Faso</option>
-                <option value="BI">Burundi</option>
-                <option value="CM">Cameroon</option>
-                <option value="CV">Cape Verde</option>
-                <option value="CF">Central African Republic</option>
-                <option value="TD">Chad</option>
-                <option value="CG">Congo Brazzaville</option>
-                <option value="CG">Congo kinsasha</option>
-                <option value="CT">Cote D'Ivoire</option>
-                <option value="DJ">Djibouti</option>
-                <option value="EG">Egypt</option>
-                <option value="GQ">Equatorial Guinea</option>
-                <option value="ER">Eritrea</option>
-                <option value="ET">Ethiopia</option>
-                <option value="GA">Gabon</option>
-                <option value="GM">Gambia</option>
-                <option value="GH">Ghana</option>
-                <option value="GN">Guinea</option>
-                <option value="KE">Kenya</option>
-                <option value="LR">Liberia</option>
-                <option value="LY">Libya</option>
-                <option value="MG">Madagascar</option>
-                <option value="ML">Mali</option>
-                <option value="MR">Mauritania</option>
-                <option value="MU">Mauritius</option>
-                <option value="MA">Morocco</option>
-                <option value="MZ">Mozambique</option>
-                <option value="NA">Namibia</option>
-                <option value="NE">Niger</option>
-                <option value="NG">Nigeria</option>
-                <option value="RW">Rwanda</option>
-                <option value="ST">Sao Tome &amp; Principe</option>
-                <option value="SN">Senegal</option>
-                <option value="SC">Seychelles</option>
-                <option value="SL">Sierra Leone</option>
-                <option value="OI">Somalia</option>
-                <option value="ZA">South Africa</option>
-                <option value="SD">Sudan</option>
-                <option value="TZ">Tanzania</option>
-                <option value="TG">Togo</option>
-                <option value="TN">Tunisia</option>
-                <option value="UG">Uganda</option>
-                <option value="ZR">Zaire</option>
-                <option value="ZM">Zambia</option>
-                <option value="ZW">Zimbabwe</option>
-            </select>
-        </div>
-        <div>
-            <label>City </label>
-            <input type="text" name="city" id="city" placeholder="Enter your city" required>
-        </div>
-        <div>
-            <label>University </label>
-            <input type="text" name="university" id="university" placeholder="Enter your University" required>
-        </div>
-        <div>
-            <label>Course </label>
-            <input type="text" name="course" id="course" placeholder="Enter your Course" maxlength="140" required>
-        </div>
-        <div class="question">
-            <div>
-                <label id="question">How did you get to know KSC?</label>
-            </div>
-            <div>
-                <input id="question" type="radio" value="radio">Friends<br>
-                <input id="question" type="radio" value="radio">Social Media<br>
-                <input id="question" type="radio" value="radio">Google Search<br>
-            </div>
-        </div>
-        <div class="g-recaptcha" data-sitekey="6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-">
-            <div>
-                <div style="width: 304px; height: 78px;">
-                    <iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="" tabindex="0" vspace="0" width="304" title="recaptcha widget" role="presentation" height="78" id="I0_1444917289438" name="I0_1444917289438" src="https://www.google.com/recaptcha/api2/anchor?k=6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-&co=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbQ..&hl=en&v=r20151006130033&size=normal&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.Nb8ObINpBKA.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCNfRvoFX0pkA_cFRmUHgmkfPskI2w#id=I0_1444917289438&parent=https%3A%2F%2Fwww.google.com&pfname=&rpctoken=21596282"></iframe>
-                </div>
-                <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none; display: none; "></textarea>
-            </div>
-        </div>
-        <div>
-            <p>I have read and agree to the <a target="_blank" href="£" rel="nofollow">Terms and conditions</a></p>
-        </div>
-        <input class="submit" type="submit" value="Submit">
-    </form>
-</body>
+    </div>
+    <div>
+        <input type="checkbox"/ id="tandc"><p>I have read and agreed to the <a target="_blank" href="#" rel="nofollow">Terms and conditions</a></p>
+    </div>
+    <input class="submit" type="submit" value="Submit">
+</form>
+
 <footer align="center">
     <div id="wrap">
         <div id="right">
             <ul>
                 <ls>
                     <div align="right">
-                        <a href="https://www.facebook.com/Knowledge-Sharing-Campaign-2017193451752977/timeline/?ref=br_tf" target="_blank">
-                            <img alt="Go to KSC facebook page" align="right" border="0" height="40" src="/static/images/facebook1.png" width="40">
+                        <a href="https://www.facebook.com/Knowledge-Sharing-Campaign-2017193451752977/timeline/?ref=br_tf"
+                           target="_blank">
+                            <img alt="Go to KSC facebook page" align="right" border="0" height="40"
+                                 src="/static/images/facebook1.png" width="40">
                         </a>
-                        <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" target="_blank"><img alt="Go to KSC google+ page" align="right" border="0" height="40" src="/static/images/google1.png" width="40"></a>
+                        <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier"
+                           target="_blank"><img alt="Go to KSC google+ page" align="right" border="0" height="40"
+                                                src="/static/images/google1.png" width="40"></a>
                         <a href="https://twitter.com/hashtag/KnowledgeSharingCampaign?src=hash&lang=en" target="_blank">
-                            <img alt="Go to KSC facebook page" border="0" height="40" src="/static/images/twitter1.png" width="40">
+                            <img alt="Go to KSC facebook page" border="0" height="40" src="/static/images/twitter1.png"
+                                 width="40">
                         </a>
                     </div>
                     <div id="main" align="left">
@@ -310,24 +320,30 @@
                             <a id="contactus" href="/contactus">
                                 <font size="3"><b> Contact Us </b></font>
                             </a>
-                        </ls>&nbsp;
+                        </ls>
+                        &nbsp;
                         <ls>
                             <a id="partners" href="/partners">
-                                <font size="3"><b>| Our Partners  </b></font>
+                                <font size="3"><b>| Our Partners </b></font>
                             </a>
-                        </ls>&nbsp;
+                        </ls>
+                        &nbsp;
                         <ls>
                             <a id="termscons" href="/termscons">
                                 <font size="3"><b>| Terms&Conditions </font></a>
-                    
-              </ls>&nbsp;
-                <ls>
-                    <a id="privacy" href="/privacy">
-                        <font size="3"><b>| Privacy Policy </font></a>
-                </ls>&nbsp;
-                    &nbsp;
-    <ls><a href=""><b>| Copyright &copy; 2015 &middot; KnowledgeSharingCampaign &middot; </a></ls>
-            </div>
-            </div>
-    </footer>
+
+                        </ls>
+                        &nbsp;
+                        <ls>
+                            <a id="privacy" href="/privacy">
+                                <font size="3"><b>| Privacy Policy </font></a>
+                        </ls>
+                        &nbsp;
+                        &nbsp;
+                        <ls><a href=""><b>| Copyright &copy; 2015 &middot; KnowledgeSharingCampaign &middot; </a></ls>
+                    </div>
+        </div>
+</footer>
+<script type="text/javascript" src="/static/js/register.js"></script>
+</body>
 </html>
