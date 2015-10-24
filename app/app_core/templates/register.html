@@ -2,10 +2,13 @@
 <html>
 
 <head>
-    <title>Events</title>
+    <title>Registration</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link type="text/css" rel="stylesheet" href="/static/css/home_style.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/register.css" />
+    <script type="text/javascript" src="/static/js/register.js"></script>
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20151006130033/recaptcha__en.js"></script>
   </head>
 <header>
     <div align="right">
@@ -29,12 +32,9 @@
     </div>
 </header>
 </div>
-<link type="text/css" rel="stylesheet" href="/static/css/register.css" />
-<script type="text/javascript" src="/static/js/register.js"></script>
-<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20151006130033/recaptcha__en.js"></script>
-</head>
 
 <body onload="document.register.firstname.focus()">
+    <fieldset>
     <form name="register" id="register" method="post" onsubmit="validate()">
         <title>Registration</title>
         <h1>Create a KSC account</h1>
@@ -286,10 +286,11 @@
             </div>
         </div>
         <div>
-            <p>I have read and agree to the <a target="_blank" href="£" rel="nofollow">Terms and conditions</a></p>
+            <p>I have read and agree to the <a target="_blank" href="/termscons" rel="nofollow">Terms and conditions</a></p>
         </div>
-        <input class="submit" type="submit" value="Submit">
+        <button type="submit">Submit</button>
     </form>
+    </fieldset>
 </body>
 <footer align="center">
     <div id="wrap">
