@@ -55,3 +55,11 @@ def charles():
 @application.route("/rahul")
 def rahul():
     return render_template("rahul.html")     
+
+@application.route("/forum")
+def forum():
+    return render_template("forum.html")
+
+@application.route("/registrationsuccessful")
+def registrationsuccessful():
+    return render_template("registrationsuccessful.html")
