@@ -45,7 +45,7 @@ def register():
 
 
 @application.route("/adduser", methods=['POST'])
-def add_user():
+def add():
     add_user(request)
 
     return "<h1>Registered successfully</h1>"
