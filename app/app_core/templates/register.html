@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Register</title>
+    <title>Registration</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link type="text/css" rel="stylesheet" href="/static/css/home_style.css">
@@ -36,9 +36,7 @@
 </header>
 </div>
 <body onload="document.register.firstname.focus()">
-<form name="register" id="register" method="post" onsubmit="return validateForm()">
-    <title>Registration</title>
-
+<form name="register" id="register" method="post" onsubmit="return validateForm()" action="/adduser">
     <h1>Create a KSC account</h1>
 
     <div>
@@ -72,11 +70,11 @@
     </div>
     <div>
         <label>Date Of Birth</label>
-        <input type="text" id="dob" placeholder="dd/mm/yyyy" required>
+        <input type="text" name="dob" id="dob" placeholder="dd/mm/yyyy" required>
     </div>
     <div>
         <label>Gender</label><br>
-        <select id="gender" required>
+        <select id="gender" name="gender" required>
             <option value="">Please select</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
@@ -192,7 +190,11 @@
 <script type="text/javascript" src="/static/js/register.js"></script>
 <script>
     $(function () {
-        $("#dob").datepicker();
+        $("#dob").datepicker({
+            dateFormat: "dd/mm/yy",
+            changeMonth: true,
+            changeYear: true
+        });
     });
 
     $.ajax({
