@@ -1,239 +1,241 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>KSC</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="/static/css/home_style.css">
-<link rel="stylesheet" href="/static/css/home.css" type="text/css">
-<link rel="stylesheet" href="/static/css/plex.css" type="text/css">
-
-
-
+    <title>KSC</title>
+    {% include 'header.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/home_style.css">
+    <link rel="stylesheet" href="/static/css/home.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/plex.css" type="text/css">
 </head>
+
 <body>
-<header>
-
-    <div id="langbar" align="right">
-        <select>
-            <option>Language</option>
-            <option value="English">English</option>
-            <option value="French">French</option>
-        </select>
     </div>
-
-
-
-    <div id="menu" class="clear">
-
-
-
-        <a href="/"><div class="logo"><img height="4%" src="/static/images/ksclogo3.png" alt="logo"></div></a>
-        <ul align="center" id="bar">
-            <li><a href="/aboutus">About Us</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/forum">Forum</a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Registration</a></li>
+    <div id="grid__cell" align="center">
+        <ul>
+            <div id="hist">
+                <a href="/history"><img height="250" width="450" src="/static/image/history.jpg" alt="hist"></div>
+            </a>
+            <div id="misn">
+                <a href="/abtksc"><img height="250" width="450" src="/static/image/abtimg2.jpg" alt="misn"></div>
+            </a>
         </ul>
-
     </div>
-
-
-    
-</header>
-
-
+    <div align="center">
+        <h2> <font size="10"> OUR <font face="verdana" color="green">LEADERS</font></font></h2>
     </div>
-   
-<div id="grid__cell" align="center">
-
-<ul>
-      
-<div id="hist"> <a href="/history"><img height="250" width="450" src="/static/image/history.jpg" alt="hist"></div></a>
- <div id="misn"><a href="/abtksc"><img height="250" width="450" src="/static/image/abtimg2.jpg" alt="misn"></div> </a>
-
-</ul>
-     
-    
-
-</div>
-
-
-
-
-<div align="center">
-<h2> <font size="10"> OUR <font face="verdana" color="green">LEADERS</font></font></h2>
-
-</div>
-
-
-
-<!-- This is where my problem starts -->
-
-
-      <div class="view-content">
-        <div class="dexp-grid-items grid-lg-3 grid-md-3 grid-sm-6 grid-xs-12">
-  <div class="row">
-          <div class="dexp-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <div id="node-24" class="node node-team node-teaser clearfix"  typeof="sioc:Item foaf:Document">
-    <div class="content">
-                                        
-        <div class="team-box">
-            <div class="member-image overlay-container">
-                <div class="field field-name-field-team-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" alt="" src="/static/image/spn.png" width="180" height="180" /></div></div></div>                <div class="image-overlay">
-                    <div class="portfolio-overlay-icon">
-                        <div class="member-social">
-                            <div class="tw-social-icon clearfix">
-                                <div class="field field-name-field-team-social field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-facebook"></i><br /><i class="fa fa-facebook"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-twitter"></i><br /><i class="fa fa-twitter"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-linkedin"></i><br /><i class="fa fa-linkedin"></i></span> </a></p>
-</div></div></div>                            </div>
+    <div class="view-content">
+        <div class="view-content">
+            <div class="dexp-grid-items grid-lg-3 grid-md-3 grid-sm-6 grid-xs-12">
+                <div class="row">
+                    <div class="dexp-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div id="node-24" class="node node-team node-teaser clearfix" typeof="sioc:Item foaf:Document">
+                            <div class="content">
+                                <div class="team-box">
+                                    <div class="member-image overlay-container">
+                                        <div class="field field-name-field-team-image field-type-image field-label-hidden">
+                                            <div class="field-items">
+                                                <div class="field-item even"><img typeof="foaf:Image" alt="" src="/static/image/spn.png" width="180" height="180" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-overlay">
+                                            <div class="portfolio-overlay-icon">
+                                                <div class="member-social">
+                                                    <div class="tw-social-icon clearfix">
+                                                        <div class="field field-name-field-team-social field-type-text-long field-label-hidden">
+                                                            <div class="field-items">
+                                                                <div class="field-item even">
+                                                                    <p><a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-facebook"></i><br /><i class="fa fa-facebook"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-twitter"></i><br /><i class="fa fa-twitter"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-linkedin"></i><br /><i class="fa fa-linkedin"></i></span> </a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-title">
+                                        <h2> <a href="/charles">Charles Kimpolo</h2></a>
+                                        <div class="member-pos">
+                                            <div class="field field-name-field-team-position field-type-text field-label-hidden">
+                                                <div class="field-items">
+                                                    <div class="field-item even">Founder</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="title-sep"></span>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                            <div class="field-items">
+                                                <div class="field-item even" property="content:encoded">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dexp-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div id="node-25" class="node node-team node-teaser clearfix" typeof="sioc:Item foaf:Document">
+                            <div class="content">
+                                <div class="team-box">
+                                    <div class="member-image overlay-container">
+                                        <div class="field field-name-field-team-image field-type-image field-label-hidden">
+                                            <div class="field-items">
+                                                <div class="field-item even"><img typeof="foaf:Image" alt="" src="/static/image/spn2.png" width="180" height="180" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-overlay">
+                                            <div class="portfolio-overlay-icon">
+                                                <div class="member-social">
+                                                    <div class="tw-social-icon clearfix">
+                                                        <div class="field field-name-field-team-social field-type-text-long field-label-hidden">
+                                                            <div class="field-items">
+                                                                <div class="field-item even">
+                                                                    <p><a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-facebook"></i><br /><i class="fa fa-facebook"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-twitter"></i><br /><i class="fa fa-twitter"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-linkedin"></i><br /><i class="fa fa-linkedin"></i></span> </a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-title">
+                                        <h2> <a href="/rahul"> Rahul De</h2></a>
+                                        <div class="member-pos">
+                                            <div class="field field-name-field-team-position field-type-text field-label-hidden">
+                                                <div class="field-items">
+                                                    <div class="field-item even">Co-Founder</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="title-sep"></span>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                            <div class="field-items">
+                                                <div class="field-item even" property="content:encoded">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dexp-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div id="node-26" class="node node-team node-teaser clearfix" typeof="sioc:Item foaf:Document">
+                            <div class="content">
+                                <div class="team-box">
+                                    <div class="member-image overlay-container">
+                                        <div class="field field-name-field-team-image field-type-image field-label-hidden">
+                                            <div class="field-items">
+                                                <div class="field-item even"><img typeof="foaf:Image" alt="" src="/static/image/spn.png" width="180" height="180" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-overlay">
+                                            <div class="portfolio-overlay-icon">
+                                                <div class="member-social">
+                                                    <div class="tw-social-icon clearfix">
+                                                        <div class="field field-name-field-team-social field-type-text-long field-label-hidden">
+                                                            <div class="field-items">
+                                                                <div class="field-item even">
+                                                                    <p><a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-facebook"></i><br /><i class="fa fa-facebook"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-twitter"></i><br /><i class="fa fa-twitter"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-linkedin"></i><br /><i class="fa fa-linkedin"></i></span> </a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-title">
+                                        <h2> <a href="/charles">Charles Kimpolo</h2></a>
+                                        <div class="member-pos">
+                                            <div class="field field-name-field-team-position field-type-text field-label-hidden">
+                                                <div class="field-items">
+                                                    <div class="field-item even">Founder</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="title-sep"></span>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                            <div class="field-items">
+                                                <div class="field-item even" property="content:encoded">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dexp-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div id="node-27" class="node node-team node-teaser clearfix" typeof="sioc:Item foaf:Document">
+                            <div class="content">
+                                <div class="team-box">
+                                    <div class="member-image overlay-container">
+                                        <div class="field field-name-field-team-image field-type-image field-label-hidden">
+                                            <div class="field-items">
+                                                <div class="field-item even"><img typeof="foaf:Image" alt="" src="/static/image/spn2.png" width="180" height="180" /></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-overlay">
+                                            <div class="portfolio-overlay-icon">
+                                                <div class="member-social">
+                                                    <div class="tw-social-icon clearfix">
+                                                        <div class="field field-name-field-team-social field-type-text-long field-label-hidden">
+                                                            <div class="field-items">
+                                                                <div class="field-item even">
+                                                                    <p><a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-facebook"></i><br /><i class="fa fa-facebook"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-twitter"></i><br /><i class="fa fa-twitter"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-linkedin"></i><br /><i class="fa fa-linkedin"></i></span> </a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-title">
+                                        <h2> <a href="/rahul">Rahul De</h2></a>
+                                        <div class="member-pos">
+                                            <div class="field field-name-field-team-position field-type-text field-label-hidden">
+                                                <div class="field-items">
+                                                    <div class="field-item even">Co-Founder</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="title-sep"></span>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                            <div class="field-items">
+                                                <div class="field-item even" property="content:encoded">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="member-title">
-                <h2> <a href="/charles">Charles Kimpolo</h2></a>
-                <div class="member-pos"><div class="field field-name-field-team-position field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Founder</div></div></div></div>
-                <span class="title-sep"></span>
-            </div>
-            <div class="team-content">
-                <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p></p>
-</div></div></div>            </div>
         </div>
     </div>
-</div>      </div>
-          <div class="dexp-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <div id="node-25" class="node node-team node-teaser clearfix"  typeof="sioc:Item foaf:Document">
-    <div class="content">
-                                        
-        <div class="team-box">
-            <div class="member-image overlay-container">
-                <div class="field field-name-field-team-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" alt="" src="/static/image/spn2.png" width="180" height="180" /></div></div></div>                <div class="image-overlay">
-                    <div class="portfolio-overlay-icon">
-                        <div class="member-social">
-                            <div class="tw-social-icon clearfix">
-                                <div class="field field-name-field-team-social field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-facebook"></i><br /><i class="fa fa-facebook"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-twitter"></i><br /><i class="fa fa-twitter"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-linkedin"></i><br /><i class="fa fa-linkedin"></i></span> </a></p>
-</div></div></div>                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="member-title">
-                <h2> <a href="/rahul"> Rahul De</h2></a>
-                <div class="member-pos"><div class="field field-name-field-team-position field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Co-Founder</div></div></div></div>
-                <span class="title-sep"></span>
-            </div>
-            <div class="team-content">
-                <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p></p>
-</div></div></div>            </div>
-        </div>
     </div>
-</div>      </div>
-          <div class="dexp-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <div id="node-26" class="node node-team node-teaser clearfix" typeof="sioc:Item foaf:Document">
-    <div class="content">
-                                        
-        <div class="team-box">
-            <div class="member-image overlay-container">
-                <div class="field field-name-field-team-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" alt="" src="/static/image/spn.png" width="180" height="180" /></div></div></div>                <div class="image-overlay">
-                    <div class="portfolio-overlay-icon">
-                        <div class="member-social">
-                            <div class="tw-social-icon clearfix">
-                                <div class="field field-name-field-team-social field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-facebook"></i><br /><i class="fa fa-facebook"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-twitter"></i><br /><i class="fa fa-twitter"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-linkedin"></i><br /><i class="fa fa-linkedin"></i></span> </a></p>
-</div></div></div>                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="member-title">
-                <h2> <a href="/charles">Charles Kimpolo</h2></a>
-                <div class="member-pos"><div class="field field-name-field-team-position field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Founder</div></div></div></div>
-                <span class="title-sep"></span>
-            </div>
-            <div class="team-content">
-                <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p></p>
-</div></div></div>            </div>
-        </div>
     </div>
-</div>      </div>
-          <div class="dexp-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <div id="node-27" class="node node-team node-teaser clearfix"  typeof="sioc:Item foaf:Document">
-    <div class="content">
-                                        
-        <div class="team-box">
-            <div class="member-image overlay-container">
-                <div class="field field-name-field-team-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" alt="" src="/static/image/spn2.png" width="180" height="180" /></div></div></div>                <div class="image-overlay">
-                    <div class="portfolio-overlay-icon">
-                        <div class="member-social">
-                            <div class="tw-social-icon clearfix">
-                                <div class="field field-name-field-team-social field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-facebook"></i><br /><i class="fa fa-facebook"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-twitter"></i><br /><i class="fa fa-twitter"></i></span> </a> <a href="#" class="dexp-social-icon dexp-social-circle dexp-social-white"><span><i class="fa fa-linkedin"></i><br /><i class="fa fa-linkedin"></i></span> </a></p>
-</div></div></div>                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="member-title">
-                <h2> <a href="/rahul">Rahul De</h2></a>
-                <div class="member-pos"><div class="field field-name-field-team-position field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Co-Founder</div></div></div></div>
-                <span class="title-sep"></span>
-            </div>
-            <div class="team-content">
-                <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p></p>
-</div></div></div>            </div>
-        </div>
-    </div>
-</div>      </div>
-      </div>
-</div>    </div>
-  
-  
-  
-  
-  
-  
-</div>  </div>
-</div>
-      </body>
-      <footer align="center">
-    <div id="wrap">
-    <div id="right">
-    <ul>
-        <ls>
-            <div align="right">
-                <a href="https://www.facebook.com/Knowledge-Sharing-Campaign-2017193451752977/timeline/?ref=br_tf" target="_blank">
-                    <img alt="Go to KSC facebook page" align="right" border="0" height="40" src="/static/images/facebook1.png" width="40">
-                </a>
-                <a href="https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/?gpsrc%3Dgplp0#identifier" target="_blank"><img alt="Go to KSC google+ page" align="right" border="0" height="40" src="/static/images/google1.png" width="40"></a>
-                <a href="https://twitter.com/hashtag/KnowledgeSharingCampaign?src=hash&lang=en" target="_blank">
-                    <img alt="Go to KSC facebook page" border="0" height="40" src="/static/images/twitter1.png" width="40">
-                </a>
-    </div>
-    <div id="main" align="left">
-    <ls>
-                    <a id="contactus" href="/contactus">
-                        <font size="3"><b> Contact Us </b></font>
-                    </a>
-                   
-                </ls>&nbsp;
-                <ls>
-                    <a id="partners" href="/partners">
-                        <font size="3"><b>| Our Partners  </b></font>
-                    </a>
-                    
-                </ls>&nbsp;
-                <ls>
-                    <a id="termscons" href="/termscons">
-                        <font size="3"><b>| Terms&Conditions </font></a>
-                    
-              </ls>&nbsp;
-                <ls>
-                    <a id="privacy" href="/privacy">
-                        <font size="3"><b>| Privacy Policy </font></a>
-                </ls>&nbsp;
-                    &nbsp;
-    <ls><a href=""><b>| Copyright &copy; 2015 &middot; KnowledgeSharingCampaign &middot; </a></ls>
-            </div>
-            </div>
-    </footer>
+    {% include 'footer.html' %}
+</body>
 </html>
